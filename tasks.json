@@ -501,6 +501,45 @@
     "descricao": "**Fechado:** plano full (Combo Ouro). Valor e vencimento registrados no painel, aba Clientes. Pagamento combinado pro dia 15/10.\n\n**Objetivo:** deixar tudo pronto pra produção começar. Regra iMarcas: produção só depois do pagamento.\n\n**Quem:** Lucas + Cris · **Com o cliente:** Pelé\n\n**Pendente com o Pelé:** @ e acesso do Instagram, Meta Business, logo/fotos, linhas de produto e quem atende os leads.",
     "coluna": "doing"
    }
+  },
+  {
+   "id": "op-0013",
+   "type": "update",
+   "task": {
+    "id": "t-pele-diagnostico",
+    "descricao": "**Objetivo:** fotografar o ponto de partida pra mostrar o antes/depois no fim do primeiro mês (mesmo formato dos cases Cris e Lugner).\n\n**O que já sabemos:** Google com nota 5,0 e 22 avaliações; elogios em material, montagem, prazo e formas de pagamento. Isso vira prova social no perfil e nos anúncios.\n\n**Saída:** 1 página com o que está bom, o que falta e o plano do mês 1.\n\n**Documento:** [Concorrentes e diagnóstico digital](https://claude.ai/code/artifact/e21e69c9-ff87-4222-9f45-b7c2052f143d) — 6 concorrentes mapeados, roteiro de nota do Instagram e plano do mês 1.",
+    "checklist": [
+     {
+      "t": "Print do perfil atual (antes)",
+      "done": false
+     },
+     {
+      "t": "Avaliar foto de perfil, nome e bio",
+      "done": false
+     },
+     {
+      "t": "Avaliar destaques e posts fixados",
+      "done": false
+     },
+     {
+      "t": "Frequência de postagem nos últimos 30 dias",
+      "done": false
+     },
+     {
+      "t": "Estudar os 6 concorrentes (ficha no documento)",
+      "done": false
+     },
+     {
+      "t": "Separar as melhores avaliações do Google pra usar",
+      "done": true
+     },
+     {
+      "t": "Fechar plano do mês 1 e mandar no grupo",
+      "done": false
+     }
+    ],
+    "coluna": "doing"
+   }
   }
  ]
 }
