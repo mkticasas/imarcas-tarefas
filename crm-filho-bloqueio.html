@@ -1,0 +1,39 @@
+<!--
+  iMarcas · Bloqueio do CRM do cliente
+  Colar logo depois de <body>, antes de qualquer outro <script> do CRM.
+  Troque só o CLIENT_SLUG (igual ao slug cadastrado no painel da iMarcas).
+  No script principal do CRM, a primeira linha do DOMContentLoaded deve ser:
+      if (window.__MASTER_BLOCKED__) return;
+  Se o painel estiver fora do ar, o CRM continua funcionando (não trava o cliente por erro nosso).
+-->
+<div id="imarcasBloqueio" style="display:none;position:fixed;inset:0;z-index:99999;background:#0F0F0F;color:#F5F5F5;font-family:system-ui,-apple-system,sans-serif;align-items:center;justify-content:center;padding:24px;text-align:center;">
+  <div style="max-width:380px;">
+    <div style="width:56px;height:56px;margin:0 auto 18px;border-radius:14px;background:#C52F43;display:flex;align-items:center;justify-content:center;font-size:26px;">⏸</div>
+    <h2 style="margin:0 0 10px;font-size:20px;">Acesso suspenso</h2>
+    <p style="margin:0 0 20px;color:#B5B5B5;font-size:14px;line-height:1.5;">O acesso a este sistema está pausado. Fale com a iMarcas para regularizar e liberar na hora.</p>
+    <a href="https://wa.me/5517996389193" style="display:inline-block;background:#C52F43;color:#fff;text-decoration:none;padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;">Falar com a iMarcas</a>
+  </div>
+</div>
+<script>
+(function(){
+  const CLIENT_SLUG = 'TROCAR_AQUI';
+  const MASTER_URL  = 'https://mqdhavyaeujufhlqdlfg.supabase.co';
+  const MASTER_KEY  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1xZGhhdnlhZXVqdWZobHFkbGZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NDg0OTUsImV4cCI6MjA5NTUyNDQ5NX0.bmlsVIXzQ1H-R4CEVZJzg_8TXygBsSQ57GOteBKqLHE';
+  window.__MASTER_BLOCKED__ = false;
+  try{
+    const x = new XMLHttpRequest();
+    x.open('POST', MASTER_URL + '/rest/v1/rpc/imarcas_status_cliente', false); // síncrono: decide antes do CRM iniciar
+    x.setRequestHeader('apikey', MASTER_KEY);
+    x.setRequestHeader('Authorization', 'Bearer ' + MASTER_KEY);
+    x.setRequestHeader('Content-Type', 'application/json');
+    x.send(JSON.stringify({ p_slug: CLIENT_SLUG }));
+    if(x.status === 200){
+      const r = JSON.parse(x.responseText || '{}');
+      if(r && r.bloqueado){
+        window.__MASTER_BLOCKED__ = true;
+        document.getElementById('imarcasBloqueio').style.display = 'flex';
+      }
+    }
+  }catch(e){ console.warn('iMarcas: status indisponível, CRM liberado', e); }
+})();
+</script>

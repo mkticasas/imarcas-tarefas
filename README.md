@@ -18,3 +18,10 @@ Mesmo sistema do quadro da OrkAI, com identidade da iMarcas e dados separados.
 ## Trocar de Supabase no futuro
 
 Rode o `supabase.sql` no projeto novo e mude só `SUPA_URL` e `SUPA_KEY` no `index.html`.
+
+## Painel Mãe (clientes e CRMs)
+
+- Abas **Visão Geral**, **Clientes** e **Pagamentos** usam as tabelas `imarcas_clients` e `imarcas_payments` (criadas pelo `painel-mae.sql`).
+- Cobrança é manual: botão **Pagamento** registra o valor e o novo vencimento e reativa o cliente.
+- O CRM de cada cliente consulta `imarcas_status_cliente(slug)` ao abrir. Fica bloqueado se o cliente estiver marcado como bloqueado ou se passou do vencimento + carência. Não precisa de servidor.
+- Para ligar um CRM ao painel: colar o `crm-filho-bloqueio.html` logo depois do `<body>` do CRM e trocar o `CLIENT_SLUG`.

@@ -505,6 +505,9 @@
   </div>
 
   <div class="tabs">
+    <div class="tab" id="tab-overview" onclick="showPage('overview')">Visão Geral</div>
+    <div class="tab" id="tab-clients" onclick="showPage('clients')">Clientes</div>
+    <div class="tab" id="tab-payments" onclick="showPage('payments')">Pagamentos</div>
     <div class="tab active" id="tab-tasks" onclick="showPage('tasks')">Tarefas</div>
   </div>
 
@@ -859,8 +862,8 @@
           <input type="text" id="c-supakey" placeholder="eyJ...">
         </div>
       </div>
-      <div class="form-group">
-        <label>Supabase service_role key (usada para resetar senha de vendedores)</label>
+      <div class="form-group" style="display:none;">
+        <label>Supabase service_role key (não usada na iMarcas)</label>
         <input type="text" id="c-servicekey" placeholder="eyJ...">
       </div>
       <div class="form-row3">
@@ -1088,11 +1091,13 @@ const WORKER_URL = 'https://orkai-backend.orkia-system.workers.dev';
 
 let db = null, allClients = [], allPayments = [], currentUser = null;
 
-// Categorias de produto que a OrkAI oferece. Pra adicionar uma nova categoria no futuro,
+// Categorias de produto que a iMarcas oferece. Pra adicionar uma nova categoria no futuro,
 // basta incluir um item aqui — aparece automaticamente no formulário e no filtro.
 const PRODUCT_CATEGORIES = {
   crm: 'CRM',
-  cardapio: 'Cardápio Digital',
+  ouro: 'Combo Ouro',
+  prata: 'Combo Prata',
+  bronze: 'Combo Bronze',
   outro: 'Outro'
 };
 
@@ -1306,6 +1311,7 @@ async function finishLoginAfterAuth(){
 function onLoginSuccess(){
   document.getElementById('loginScreen').classList.remove('show');
   document.getElementById('currentUserAvatar').textContent = initials(currentUser.name);
+  loadAll();
   setTimeout(function(){try{perfAplicarAvatar();}catch(e){}},1200);
   showPage('tasks');
 }
@@ -2853,13 +2859,13 @@ async function loadAll(){
 }
 
 async function loadClients(){
-  const {data, error} = await db.from('clients').select('*').order('client_name');
+  const {data, error} = await db.from('imarcas_clients').select('*').order('client_name');
   if(error){showToast('Erro ao carregar clientes: '+error.message,'error');return;}
   allClients = data||[];
 }
 
 async function loadPayments(){
-  const {data, error} = await db.from('payments').select('*, clients(client_name)').order('paid_at',{ascending:false}).limit(100);
+  const {data, error} = await db.from('imarcas_payments').select('*, clients:imarcas_clients(client_name)').order('paid_at',{ascending:false}).limit(100);
   if(error){console.warn('Erro ao carregar pagamentos:', error.message);return;}
   allPayments = data||[];
 }
@@ -2978,8 +2984,6 @@ function renderClientsTable(){
             ? `<button class="btn btn-green btn-sm" onclick="unblockClient('${c.id}')">Desbloquear</button>`
             : `<button class="btn btn-danger btn-sm" onclick="blockClient('${c.id}')">Bloquear</button>`}
           <button class="btn btn-amber btn-sm" onclick="openPaymentModal('${c.id}')">Pagamento</button>
-          <button class="btn btn-sm" style="background:rgba(197,47,67,.15);color:var(--accent);border:1px solid rgba(197,47,67,.2);" onclick="openChargeModal('${c.id}')">Gerar cobrança</button>
-          <button class="btn btn-ghost btn-sm" onclick="openSellersModal('${c.id}')">Vendedores</button>
         </div>
       </td>
     </tr>`;
@@ -3059,8 +3063,8 @@ async function saveClient(){
   };
 
   const {error} = id
-    ? await db.from('clients').update(data).eq('id', id)
-    : await db.from('clients').insert([data]);
+    ? await db.from('imarcas_clients').update(data).eq('id', id)
+    : await db.from('imarcas_clients').insert([data]);
 
   if(error){showToast('Erro ao salvar: '+error.message,'error');return;}
 
@@ -3073,13 +3077,13 @@ async function saveClient(){
 
 async function blockClient(id){
   if(!confirm('Bloquear o acesso deste cliente agora?')) return;
-  const {error} = await db.from('clients').update({status:'blocked'}).eq('id', id);
+  const {error} = await db.from('imarcas_clients').update({status:'blocked'}).eq('id', id);
   if(error){showToast('Erro: '+error.message,'error');return;}
   showToast('Cliente bloqueado.','success');
   await loadClients(); renderOverview(); renderClientsTable();
 }
 async function unblockClient(id){
-  const {error} = await db.from('clients').update({status:'active'}).eq('id', id);
+  const {error} = await db.from('imarcas_clients').update({status:'active'}).eq('id', id);
   if(error){showToast('Erro: '+error.message,'error');return;}
   showToast('Cliente desbloqueado.','success');
   await loadClients(); renderOverview(); renderClientsTable();
@@ -3235,12 +3239,12 @@ async function confirmPayment(){
 
   if(!newDue){showToast('Defina o novo vencimento.','error');return;}
 
-  const {error: payErr} = await db.from('payments').insert([{
+  const {error: payErr} = await db.from('imarcas_payments').insert([{
     client_id: clientId, amount, next_due_date: newDue, notes
   }]);
   if(payErr){showToast('Erro ao registrar pagamento: '+payErr.message,'error');return;}
 
-  const {error: updErr} = await db.from('clients').update({
+  const {error: updErr} = await db.from('imarcas_clients').update({
     status: 'active', due_date: newDue
   }).eq('id', clientId);
   if(updErr){showToast('Pagamento salvo, mas erro ao atualizar cliente: '+updErr.message,'error');return;}
