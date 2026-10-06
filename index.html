@@ -2619,39 +2619,39 @@ function tkPrint(id){
     @page{size:A4;margin:14mm 16mm 18mm;}
     *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
     body{font-family:Arial,Helvetica,sans-serif;color:#111;margin:0;}
-    .top{background:#10141d;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;margin-bottom:16px;}
-    .top img{height:38px;}
-    .brand{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#8fb6ff;font-weight:bold;}
-    h1{font-size:20px;margin:3px 0 0;color:#fff;}
+    .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 0 12px;border-bottom:4px solid #C52F43;margin-bottom:14px;}
+    .top img{height:44px;display:block;}
+    .tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#fff;background:#C52F43;font-weight:bold;padding:6px 10px;border-radius:5px;white-space:nowrap;}
+    h1{font-size:22px;margin:0 0 10px;color:#111;line-height:1.25;}
+    .ic{width:16px;height:16px;border-radius:4px;object-fit:cover;vertical-align:-3px;margin-right:4px;}
     .info{display:flex;gap:24px;flex-wrap:wrap;font-size:12px;color:#444;margin:0 0 18px;}
     .info b{color:#111;}
-    .desc{font-size:13px;line-height:1.5;background:#f3f5f8;border-left:4px solid #10141d;padding:10px 14px;margin-bottom:20px;}
+    .desc{font-size:13px;line-height:1.5;background:#faf3f4;border-left:4px solid #C52F43;padding:10px 14px;margin-bottom:20px;}
     .desc p{margin:0 0 4px;}
     .desc strong{font-weight:bold;}
     .desc em{font-style:italic;}
     .desc .tk-ul{margin:3px 0 7px;padding-left:20px;}
     .desc .tk-hr{border:none;border-top:1px solid #bbb;margin:9px 0;}
     .desc .tk-md-gap{height:6px;}
-    .desc a{color:#10141d;}
-    h2{font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#10141d;border-bottom:1px solid #ccc;padding-bottom:5px;}
+    .desc a{color:#C52F43;}
+    h2{font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#C52F43;border-bottom:2px solid #C52F43;padding-bottom:5px;}
     .ck{list-style:none;padding:0;margin:10px 0 0;}
     .ck li{display:flex;align-items:center;gap:12px;padding:9px 4px;border-bottom:1px solid #e4e7ec;font-size:14px;}
     .box{width:17px;height:17px;border:2px solid #555;border-radius:3px;flex-shrink:0;position:relative;}
-    .box.x::after{content:"✓";position:absolute;top:-4px;left:1px;font-size:16px;font-weight:bold;color:#10141d;}
+    .box.x::after{content:"✓";position:absolute;top:-4px;left:1px;font-size:16px;font-weight:bold;color:#C52F43;}
     li.done span{text-decoration:line-through;color:#888;}
     .obs{margin-top:26px;}
     .obs .line{border-bottom:1px solid #bbb;height:26px;}
-    .foot{margin-top:30px;font-size:10px;color:#999;text-align:center;}
+    .foot{margin-top:30px;padding-top:10px;border-top:1px solid #eee;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#888;}
+    .foot img{height:16px;}
   </style></head><body>
   <div class="top">
-    ${logoSrc?`<img src="${logoSrc}" alt="iMarcas">`:''}
-    <div>
-      <div class="brand">iMarcas — Tarefa de campo</div>
-      <h1>${tkEsc(t.titulo)}</h1>
-    </div>
+    ${logoSrc?`<img src="${logoSrc}" alt="iMarcas">`:'<b style="font-size:24px">iMarcas</b>'}
+    <div class="tag">Tarefa de campo${tkCode(t)?' · '+tkCode(t):''}</div>
   </div>
+  <h1>${tkEsc(t.titulo)}</h1>
   <div class="info">
-    <span><b>Área:</b> ${tkEsc(a.n)}</span>
+    <span><b>Área:</b> ${a.icon&&tkUrlCache[a.icon]?`<img class="ic" src="${tkUrlCache[a.icon]}" alt="">`:''}${tkEsc(a.n)}</span>
     <span><b>Status:</b> ${tkEsc(col.n)}</span>
     <span><b>Prioridade:</b> ${tkEsc(t.prioridade||'—')}</span>
     ${t.prazo?`<span><b>Prazo:</b> ${t.prazo.split('-').reverse().join('/')}</span>`:''}
@@ -2660,7 +2660,7 @@ function tkPrint(id){
   ${t.descricao?`<div class="desc">${tkMd(t.descricao)}</div>`:''}
   ${ck.length?`<h2>Checklist</h2><ul class="ck">${ck.map(i=>`<li class="${i.done?'done':''}"><div class="box ${i.done?'x':''}"></div><span>${tkEsc(i.t)}</span></li>`).join('')}</ul>`:''}
   <div class="obs"><h2>Observações</h2>${'<div class="line"></div>'.repeat(5)}</div>
-  <div class="foot">Gerado pelo painel de tarefas iMarcas</div>
+  <div class="foot"><span>Marcas reais para negócios locais.</span>${logoSrc?`<img src="${logoSrc}" alt="iMarcas">`:''}</div>
   <script>window.onload=function(){window.print();}<\/script>
   </body></html>`);
   w.document.close();
