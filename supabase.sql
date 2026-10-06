@@ -114,7 +114,7 @@ end $$;
 -- Pra liberar outra pessoa (ex.: Cris), repita o insert com o e-mail dela.
 insert into public.imarcas_membros (auth_user_id, name, email)
 select id, 'Lucas', email from auth.users
-where email = 'TROQUE_PELO_SEU_EMAIL_DA_VITRINE'
+where email = 'mkt.icasas@gmail.com'
 on conflict (auth_user_id) do nothing;
 
 -- Conferência: deve aparecer 1 linha com o seu e-mail.
