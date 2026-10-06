@@ -1254,7 +1254,8 @@ async function confirmMfaSetup(){
 
   const { data: challenge, error: challengeError } = await db.auth.mfa.challenge({ factorId: pendingMfaFactorId });
   if(challengeError){
-    document.getElementById('mfaSetupError').textContent = 'Erro ao confirmar. Tente novamente.';
+    console.error('MFA challenge', challengeError);
+    document.getElementById('mfaSetupError').textContent = 'Erro ao confirmar: '+(challengeError.message||challengeError);
     document.getElementById('mfaSetupError').style.display = 'block';
     btn.disabled = false; btn.textContent = 'Confirmar e ativar';
     return;
@@ -1269,7 +1270,8 @@ async function confirmMfaSetup(){
   btn.disabled = false; btn.textContent = 'Confirmar e ativar';
 
   if(verifyError){
-    document.getElementById('mfaSetupError').textContent = 'Código inválido. Verifique o app e tente novamente.';
+    console.error('MFA verify', verifyError);
+    document.getElementById('mfaSetupError').textContent = 'Código inválido: '+(verifyError.message||verifyError);
     document.getElementById('mfaSetupError').style.display = 'block';
     return;
   }
