@@ -444,6 +444,16 @@
     ],
     "descricao": "**CLIENTE iMARCAS · Pelé Esquadrias de Alumínio**\n- **Endereço:** Av. Alfredo Teodoro de Oliveira, 2594, Sala 1 · Jardim das Oliveiras · São José do Rio Preto/SP\n- **Telefone/WhatsApp:** (17) 99241-6696\n- **Horário:** ter a sex 7h30–11h30 / 13h–18h · sáb 7h30–13h · fecha dom e seg (conferir a segunda)\n- **Google:** nota 5,0 com 22 avaliações. Elogios recorrentes: qualidade do material, montagem, prazo de entrega e opções de pagamento\n- **Presença digital:** não achei site nem Instagram indexado → levantar @ com ele\n\n---\n\n**O QUE FOI FECHADO NA REUNIÃO**\n- Combos apresentados: Bronze, Prata e Ouro (mensal)\n- Plano full + CRM de brinde (com o Cris, mesmo sistema que a iCasas usa)\n- Tráfego pago com formulário de qualificação (lead cai no CRM e já distribui pro vendedor)\n- Próximo passo combinado: criar grupo \"iMarcas · Pelé Esquadrias\" e agendar dia de captação numa obra boa\n\n**DORES QUE ELE TROUXE**\n- Não tem CRM — controla orçamento de cabeça/agenda\n- Usa Conta Azul só pra montar orçamento; acha ruim\n- Perde tempo com lead que só quer preço ou nem começou a obra\n\n**LEAD IDEAL (base pras perguntas do formulário)**\n- Arquiteto ou cliente final com projeto e medidas definidas\n- Obra em andamento ou pra começar em breve\n- Quem ainda nem começou a obra: não descartar, só não é a hora — atendimento diferente (nutrição), ciclo longo\n\n**PERGUNTAS DO FORMULÁRIO (rascunho)**\n1. Você é: arquiteto/engenheiro · dono da obra · construtora\n2. Já tem projeto com as medidas das esquadrias? sim · não\n3. Em que fase está a obra? estrutura/alvenaria · reboco/acabamento · ainda não começou\n4. Região da obra (cidade/bairro)\n→ Nome + WhatsApp obrigatório · e-mail opcional\n\n---\n\n**CARDS DESTE CLIENTE** (cada um marca o item aqui quando concluir)\n#000088 Onboarding e pagamento · #000089 Diagnóstico · #000090 Captação · #000091 Perfil · #000092 Calendário · #000093 Tráfego · #000094 CRM\n\n**RISCOS / PONTOS DE ATENÇÃO**\n- Diferença Ouro x Prata é pequena e o Ouro ainda leva CRM de graça → definir o que o CRM inclui e por quanto tempo é brinde\n- Verba de tráfego é separada da mensalidade → deixar escrito\n- Se ninguém alimentar o CRM do lado dele, o brinde não gera resultado"
    }
+  },
+  {
+   "id": "op-0010",
+   "type": "remove",
+   "task_id": "t-empresa-marketing-nova"
+  },
+  {
+   "id": "op-0011",
+   "type": "area_del",
+   "area_id": "orkai"
   }
  ]
 }

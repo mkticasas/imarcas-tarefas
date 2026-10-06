@@ -192,6 +192,10 @@
   .cfg-row input[type=color]{width:34px;height:32px;padding:2px;border:1px solid var(--border2);border-radius:8px;background:var(--bg3);cursor:pointer;flex-shrink:0;}
   .cfg-row input[type=text]{flex:1;}
   .cfg-tpl{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:10px;margin-bottom:10px;display:flex;flex-direction:column;gap:8px;}
+  .tk-area-ic{width:16px;height:16px;border-radius:4px;object-fit:cover;vertical-align:-3px;margin-right:5px;display:inline-block;background:#fff;}
+  .tk-area-ic.lg{width:20px;height:20px;border-radius:5px;vertical-align:-5px;}
+  .cfg-ic{width:32px;height:32px;border-radius:7px;border:1px dashed var(--border2,#333);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;overflow:hidden;font-size:15px;color:var(--text3);background:var(--bg);}
+  .cfg-ic img{width:100%;height:100%;object-fit:cover;}
   .tk-cover{width:100%;height:110px;object-fit:cover;display:block;background:var(--bg);}
   .tk-cover.vert{height:auto;max-height:340px;object-fit:contain;padding:6px 0;}
   .tk-ax-item{display:flex;align-items:center;gap:10px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:8px 11px;margin-bottom:6px;flex-wrap:wrap;}
@@ -1733,6 +1737,15 @@ function tkArea(id){
   return porNome||{id:id,n:id||'—',c:'#8a90a0'};
 }
 function tkResolveArea(v){return tkArea(v).id;}
+// ícone (logo do cliente) na frente do nome da área
+function tkIc(a,grande){
+  const u=a&&a.icon&&tkUrlCache[a.icon];
+  return u?'<img class="tk-area-ic'+(grande?' lg':'')+'" src="'+u+'" alt="">':'';
+}
+async function tkAssinarIcones(){
+  const ps=TK_AREAS.map(function(a){return a.icon;}).filter(Boolean);
+  if(ps.length)await tkAssinar(ps);
+}
 
 async function loadTaskConfig(){
   const {data}=await db.from('imarcas_task_config').select('*').eq('id',1).maybeSingle();
@@ -1741,6 +1754,7 @@ async function loadTaskConfig(){
     if(data.areas&&data.areas.length)TK_AREAS=data.areas;
     TK_TEMPLATES=data.templates||[];
   }
+  await tkAssinarIcones();
 }
 
 async function loadTasks(force){
@@ -1849,6 +1863,14 @@ async function tkSyncOps(){
         if(restantes.length!==cols.length){
           await db.from('imarcas_task_config').upsert({id:1,colunas:restantes});
           TK_COLS=restantes;
+        }
+      }else if(op.type==='area_del'&&op.area_id){
+        const {data:cfg}=await db.from('imarcas_task_config').select('areas').eq('id',1).maybeSingle();
+        const areas=(cfg&&cfg.areas)||TK_AREAS.slice();
+        const restantes=areas.filter(function(a){return a.id!==op.area_id&&tkSlug(a.n)!==tkSlug(op.area_id);});
+        if(restantes.length!==areas.length){
+          await db.from('imarcas_task_config').upsert({id:1,areas:restantes});
+          TK_AREAS=restantes;
         }
       }else if(op.type==='config'&&op.config){
         await db.from('imarcas_task_config').upsert({id:1,...op.config});
@@ -2014,13 +2036,13 @@ function wsRenderLateral(){
     const n=cont[a.id]||0;
     if(!n&&tkFiltroArea!==a.id)return;
     h+='<div class="ws-item'+(tkFiltroArea===a.id?' on':'')+'" onclick="tkSetFiltro(\''+a.id+'\')">'+
-       '<span class="ws-bola" style="background:'+a.c+'"></span>'+tkEsc(a.n)+'<span class="ws-cnt">'+n+'</span></div>';
+       '<span class="ws-bola" style="background:'+a.c+'"></span>'+tkIc(a)+tkEsc(a.n)+'<span class="ws-cnt">'+n+'</span></div>';
   });
   el.innerHTML=h;
   const t=document.getElementById('wsTitulo');
   if(t){
     const a=tkFiltroArea?tkArea(tkFiltroArea):null;
-    t.innerHTML=a?('<span class="ws-bola" style="background:'+a.c+';width:11px;height:11px"></span>'+tkEsc(a.n)):'Tudo';
+    t.innerHTML=a?('<span class="ws-bola" style="background:'+a.c+';width:11px;height:11px"></span>'+tkIc(a,true)+tkEsc(a.n)):'Tudo';
   }
   const v=document.getElementById('wsVisoes');
   if(v)v.innerHTML=WS_VISOES.map(function(x){
@@ -2085,7 +2107,7 @@ function wsRenderTabela(){
       const late=t.prazo&&tkResolveCol(t.coluna)!=='done'&&new Date(t.prazo+'T23:59')<new Date();
       return '<tr onclick="openTaskModal(\''+t.id+'\')">'+
         '<td><span class="tk-code">'+tkCode(t)+'</span> '+tkEsc(t.titulo)+'</td>'+
-        '<td><span class="badge" style="background:'+a.c+'22;color:'+a.c+'">'+tkEsc(a.n)+'</span></td>'+
+        '<td><span class="badge" style="background:'+a.c+'22;color:'+a.c+'">'+tkIc(a)+tkEsc(a.n)+'</span></td>'+
         '<td><span class="badge" style="background:'+c.c+'22;color:'+c.c+'">'+tkEsc(c.n)+'</span></td>'+
         '<td><span style="color:'+(TK_PRIOS[t.prioridade]||'var(--text3)')+';font-size:12px;font-weight:600">'+(t.prioridade||'—')+'</span></td>'+
         '<td>'+(ck.length?'<div class="ws-barra"><i style="width:'+p+'%;background:'+(p===100?'var(--green)':'var(--accent)')+'"></i></div><span class="ws-mono">'+feitos+'/'+ck.length+'</span>':'<span class="ws-mono">—</span>')+'</td>'+
@@ -2121,7 +2143,7 @@ function wsRenderPainel(){
       if(!meus.length)return;
       const f=meus.filter(function(t){return tkResolveCol(t.coluna)==='done';}).length;
       h+='<div class="ws-kpi" style="cursor:pointer" onclick="tkSetFiltro(\''+a.id+'\')">'+
-         '<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span class="ws-bola" style="background:'+a.c+'"></span><b style="font-size:13px">'+tkEsc(a.n)+'</b></div>'+
+         '<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span class="ws-bola" style="background:'+a.c+'"></span>'+tkIc(a)+'<b style="font-size:13px">'+tkEsc(a.n)+'</b></div>'+
          '<div class="ws-barra"><i style="width:'+(meus.length?Math.round(f/meus.length*100):0)+'%;background:'+a.c+'"></i></div>'+
          '<div class="l" style="margin-top:8px">'+f+' de '+meus.length+' concluídas</div></div>';
     });
@@ -2212,7 +2234,7 @@ function tkRenderFiltros(){
     const n=cont[a.id]||0;
     if(!n)return;
     const ativo=tkFiltroArea===a.id;
-    html+='<button class="tk-chip'+(ativo?' on':'')+'" style="'+(ativo?'background:'+a.c+'22;border-color:'+a.c+';color:'+a.c:'')+'" onclick="tkSetFiltro(\''+a.id+'\')">'+tkEsc(a.n)+' <span>'+n+'</span></button>';
+    html+='<button class="tk-chip'+(ativo?' on':'')+'" style="'+(ativo?'background:'+a.c+'22;border-color:'+a.c+';color:'+a.c:'')+'" onclick="tkSetFiltro(\''+a.id+'\')">'+tkIc(a)+tkEsc(a.n)+' <span>'+n+'</span></button>';
   });
   el.innerHTML=html;
 }
@@ -2239,7 +2261,7 @@ function tkCardEl(t){
       </button>
     </div>
     <div class="tk-meta">
-      <span class="badge" style="background:${a.c}22;color:${a.c}">${tkEsc(a.n)}</span>
+      <span class="badge" style="background:${a.c}22;color:${a.c}">${tkIc(a)}${tkEsc(a.n)}</span>
       ${tkCode(t)?`<span class="tk-code" title="Código do card — clique pra copiar" onclick="tkCopyCode('${tkCode(t)}',event)">${tkCode(t)}</span>`:''}
       ${t.pai?`<span class="tk-vinc" title="Vinculado a um card mãe">↳</span>`:''}
       ${(t.comentarios&&t.comentarios.length)?`<span class="tk-cm-count">💬 ${t.comentarios.length}</span>`:''}
@@ -2659,6 +2681,7 @@ function openCfgModal(){
 function cfgRender(){
   const rows=(list,key)=>list.map((it,ix)=>`
     <div class="cfg-row" data-k="${key}" data-i="${ix}">
+      ${key==='areas'?`<label class="cfg-ic" title="Ícone do cliente (clique pra enviar)">${it.icon&&tkUrlCache[it.icon]?`<img src="${tkUrlCache[it.icon]}" alt="">`:'＋'}<input type="file" accept="image/*" style="display:none" onchange="cfgIcone(${ix},this.files)"></label>`:''}
       <input type="color" value="${it.c||'#3d7eff'}" onchange="cfgSet('${key}',${ix},'c',this.value)">
       <input type="text" value="${tkEsc(it.n)}" oninput="cfgSet('${key}',${ix},'n',this.value)">
       ${key==='cols'?`<button class="btn btn-ghost btn-sm" onclick="cfgMove(${ix},-1)" title="Mover pra esquerda">‹</button><button class="btn btn-ghost btn-sm" onclick="cfgMove(${ix},1)" title="Mover pra direita">›</button>`:''}
@@ -2672,6 +2695,17 @@ function cfgRender(){
       <textarea rows="4" oninput="cfgTpls[${ix}].items=this.value.split('\\n').map(s=>s.trim()).filter(Boolean)" placeholder="Um item por linha">${(m.items||[]).map(tkEsc).join('\n')}</textarea>
       <button class="btn btn-danger btn-sm" onclick="cfgTpls.splice(${ix},1);cfgRender()">Remover modelo</button>
     </div>`).join('');
+}
+async function cfgIcone(ix,files){
+  if(!files||!files.length)return;
+  const f=files[0];
+  const path='icones/'+cfgAreas[ix].id+'-'+Date.now()+'-'+f.name.replace(/[^a-zA-Z0-9._-]/g,'_');
+  const {error}=await db.storage.from('imarcas-files').upload(path,f);
+  if(error){showToast('Erro ao enviar ícone: '+error.message,'error');return;}
+  cfgAreas[ix].icon=path;
+  await tkAssinar([path]);
+  cfgRender();
+  showToast('Ícone carregado — clique em Salvar','success');
 }
 function cfgSet(key,ix,field,val){(key==='areas'?cfgAreas:cfgCols)[ix][field]=val;}
 function cfgDel(key,ix){
@@ -2744,7 +2778,7 @@ function smCard(t){
     '<div class="tk-card-b"><div style="display:flex;align-items:flex-start;gap:8px;">'+
     '<div class="tk-card-t" style="flex:1;">'+tkEsc(t.titulo)+'</div>'+
     '<button class="sm-remove" title="Tirar da semana">×</button></div>'+
-    '<div class="tk-meta"><span class="badge" style="background:'+a.c+'22;color:'+a.c+'">'+tkEsc(a.n)+'</span>'+
+    '<div class="tk-meta"><span class="badge" style="background:'+a.c+'22;color:'+a.c+'">'+tkIc(a)+tkEsc(a.n)+'</span>'+
     (feito?'<span class="tk-cm-count" style="color:var(--green)">✓ feito</span>':'')+
     (tkCode(t)?'<span class="tk-code">'+tkCode(t)+'</span>':'')+'</div>'+
     (ck.length?'<div class="tk-prog"><div class="tk-prog-bar"><div class="tk-prog-fill" style="width:'+pct+'%;background:'+(pct===100?'var(--green)':'var(--accent)')+'"></div></div><div class="tk-prog-txt">'+done+'/'+ck.length+' itens</div></div>':'')+
@@ -2835,7 +2869,7 @@ function smPickRender(){
       const el=document.createElement('div');el.className='tk-card pick-card';
       el.innerHTML='<div class="tk-strip" style="background:'+(TK_PRIOS[t.prioridade]||'var(--border2)')+'"></div>'+
         '<div class="tk-card-b"><div class="tk-card-t">'+tkEsc(t.titulo)+'</div>'+
-        '<div class="tk-meta"><span class="badge" style="background:'+a.c+'22;color:'+a.c+'">'+tkEsc(a.n)+'</span>'+
+        '<div class="tk-meta"><span class="badge" style="background:'+a.c+'22;color:'+a.c+'">'+tkIc(a)+tkEsc(a.n)+'</span>'+
         (ck.length?'<span class="tk-cm-count">'+done+'/'+ck.length+'</span>':'')+
         (tkCode(t)?'<span class="tk-code">'+tkCode(t)+'</span>':'')+'</div></div>';
       el.addEventListener('click',function(){
