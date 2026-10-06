@@ -454,6 +454,53 @@
    "id": "op-0011",
    "type": "area_del",
    "area_id": "orkai"
+  },
+  {
+   "id": "op-0012",
+   "type": "update",
+   "task": {
+    "id": "t-pele-onboarding",
+    "checklist": [
+     {
+      "t": "Confirmar combo e valor com o Pelé",
+      "done": true
+     },
+     {
+      "t": "Receber o pagamento — combinado pro dia 15/10 (produção só começa depois)",
+      "done": false
+     },
+     {
+      "t": "Atualizar valor e vencimento na aba Clientes do painel",
+      "done": true
+     },
+     {
+      "t": "Criar grupo de WhatsApp iMarcas · Pelé Esquadrias (Lucas, Cris, Pelé)",
+      "done": true
+     },
+     {
+      "t": "Pegar @ do Instagram e senha (ou acesso de colaborador)",
+      "done": false
+     },
+     {
+      "t": "Acesso ao Meta Business: página, Instagram e conta de anúncios",
+      "done": false
+     },
+     {
+      "t": "Logo em alta e fotos de obras que ele já tem",
+      "done": false
+     },
+     {
+      "t": "Lista das linhas de produto que ele mais quer vender",
+      "done": false
+     },
+     {
+      "t": "Definir quem atende os leads do lado dele (ele, esposa ou vendedor)",
+      "done": false
+     }
+    ],
+    "descricao": "**Fechado:** plano full (Combo Ouro). Valor e vencimento registrados no painel, aba Clientes. Pagamento combinado pro dia 15/10.\n\n**Objetivo:** deixar tudo pronto pra produção começar. Regra iMarcas: produção só depois do pagamento.\n\n**Quem:** Lucas + Cris · **Com o cliente:** Pelé\n\n**Pendente com o Pelé:** @ e acesso do Instagram, Meta Business, logo/fotos, linhas de produto e quem atende os leads.",
+    "coluna": "doing"
+   }
   }
  ]
 }
