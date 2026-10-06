@@ -1,0 +1,68 @@
+{
+ "ops": [
+  {
+   "id": "op-0001",
+   "type": "add",
+   "task": {
+    "id": "t-cliente-pele-esquadrias",
+    "codigo": 1,
+    "titulo": "CLIENTE · PELÉ ESQUADRIAS — PLANO FULL + CRM",
+    "coluna": "todo",
+    "area": "Pelé Esquadrias",
+    "prioridade": "alta",
+    "ordem": 10,
+    "descricao": "⚠️ PRECISO DE VOCÊ: confirmar o combo vendido e quem vai operar o CRM do lado dele. Valores ficam só no Supabase.\n\n**CLIENTE iMARCAS · Pelé Esquadrias de Alumínio**\n- **Endereço:** Av. Alfredo Teodoro de Oliveira, 2594, Sala 1 · Jardim das Oliveiras · São José do Rio Preto/SP\n- **Telefone/WhatsApp:** (17) 99241-6696\n- **Horário:** ter a sex 7h30–11h30 / 13h–18h · sáb 7h30–13h · fecha dom e seg (conferir a segunda)\n- **Google:** nota 5,0 com 22 avaliações. Elogios recorrentes: qualidade do material, montagem, prazo de entrega e opções de pagamento\n- **Presença digital:** não achei site nem Instagram indexado → levantar @ com ele\n\n---\n\n**O QUE FOI FECHADO NA REUNIÃO**\n- Combos apresentados: Bronze, Prata e Ouro (mensal)\n- Plano full + CRM de brinde (com o Cris, mesmo sistema que a iCasas usa)\n- Tráfego pago com formulário de qualificação (lead cai no CRM e já distribui pro vendedor)\n- Próximo passo combinado: criar grupo \"iMarcas · Pelé Esquadrias\" e agendar dia de captação numa obra boa\n\n**DORES QUE ELE TROUXE**\n- Não tem CRM — controla orçamento de cabeça/agenda\n- Usa Conta Azul só pra montar orçamento; acha ruim\n- Perde tempo com lead que só quer preço ou nem começou a obra\n\n**LEAD IDEAL (base pras perguntas do formulário)**\n- Arquiteto ou cliente final com projeto e medidas definidas\n- Obra em andamento ou pra começar em breve\n- Evitar: quem ainda nem começou a obra (ciclo longo, conversa de 1 ano)\n\n**PERGUNTAS DO FORMULÁRIO (rascunho)**\n1. Você é: arquiteto/engenheiro · dono da obra · construtora\n2. Já tem projeto com as medidas das esquadrias? sim · não\n3. Em que fase está a obra? estrutura/alvenaria · reboco/acabamento · ainda não começou\n4. Região da obra (cidade/bairro)\n→ Nome + WhatsApp obrigatório · e-mail opcional\n\n---\n\n**RISCOS / PONTOS DE ATENÇÃO**\n- Diferença Ouro x Prata é pequena e o Ouro ainda leva CRM de graça → margem apertada; definir o que o CRM inclui (implantação, treino, suporte) e por quanto tempo é brinde\n- Verba de tráfego é separada da mensalidade → deixar escrito\n- Modelo iMarcas: paga antes, produção começa depois",
+    "checklist": [
+     {
+      "t": "ONBOARDING · Confirmar combo e receber pagamento antes de produzir",
+      "done": false
+     },
+     {
+      "t": "ONBOARDING · Criar grupo iMarcas · Pelé Esquadrias (Lucas + Cris + Pelé)",
+      "done": false
+     },
+     {
+      "t": "ONBOARDING · Pegar @ do Instagram, logo e acessos (Meta Business / página)",
+      "done": false
+     },
+     {
+      "t": "ONBOARDING · Definir verba mensal de tráfego (separada da mensalidade)",
+      "done": false
+     },
+     {
+      "t": "CRM · Criar conta dele no CRM e definir quem alimenta (ele, esposa ou vendedor)",
+      "done": false
+     },
+     {
+      "t": "CRM · Definir quem recebe os leads (só ele ou distribuição entre vendedores)",
+      "done": false
+     },
+     {
+      "t": "CRM · Treinar quem vai operar",
+      "done": false
+     },
+     {
+      "t": "PERFIL · Diagnóstico do Instagram atual (bio, destaques, fixados)",
+      "done": false
+     },
+     {
+      "t": "PERFIL · Foto profissional + vídeo de apresentação",
+      "done": false
+     },
+     {
+      "t": "CAPTAÇÃO · Escolher obra boa e agendar dia de gravação",
+      "done": false
+     },
+     {
+      "t": "TRÁFEGO · Validar perguntas do formulário com ele",
+      "done": false
+     },
+     {
+      "t": "TRÁFEGO · Subir campanha com formulário de qualificação",
+      "done": false
+     }
+    ]
+   }
+  }
+ ]
+}
