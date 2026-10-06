@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Migrar anexos</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+  :root{--bg:#0d0f13;--bg2:#13161d;--border:#262b36;--text:#e8e6df;--text2:#9aa1ad;--accent:#C52F43;--green:#22c55e;--red:#ef4444;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;padding:24px 16px;}
+  .card{max-width:520px;margin:0 auto;background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:22px;}
+  h1{font-size:19px;margin:0 0 6px}
+  p{color:var(--text2);font-size:14px;line-height:1.5;margin:0 0 16px}
+  label{display:block;font-size:12px;color:var(--text2);margin:12px 0 6px}
+  input{width:100%;padding:11px 12px;border-radius:9px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:15px}
+  button{width:100%;margin-top:16px;padding:12px;border:0;border-radius:10px;background:var(--accent);color:#fff;font-weight:600;font-size:15px;cursor:pointer}
+  button:disabled{opacity:.5;cursor:default}
+  #log{margin-top:18px;font-family:ui-monospace,monospace;font-size:12px;line-height:1.6;white-space:pre-wrap;color:var(--text2);max-height:320px;overflow:auto}
+  .ok{color:var(--green)} .err{color:var(--red)}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Migrar anexos da OrkAI</h1>
+  <p>Copia as imagens e arquivos dos cards importados da OrkAI para o armazenamento da iMarcas. Use uma vez. Antes, entre no painel da iMarcas neste mesmo navegador.</p>
+  <label>E-mail do Painel Mãe da OrkAI</label>
+  <input id="em" type="email" autocomplete="username">
+  <label>Senha do Painel Mãe da OrkAI</label>
+  <input id="pw" type="password" autocomplete="current-password">
+  <label>Código do app autenticador da OrkAI (se pedir)</label>
+  <input id="mfa" inputmode="numeric" maxlength="6" placeholder="6 dígitos">
+  <button id="go" onclick="migrar()">Migrar anexos</button>
+  <div id="log"></div>
+</div>
+<script>
+const ORK_URL='https://kqzlvlrsgwbeshayliit.supabase.co';
+const ORK_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtxemx2bHJzZ3diZXNoYXlsaWl0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE4NjQyMzgsImV4cCI6MjA5NzQ0MDIzOH0.H3Nvwh04dleo0D5KcR04VGPPKs7v8fcG8_pSlsiH_Eo';
+const IM_URL='https://mqdhavyaeujufhlqdlfg.supabase.co';
+const IM_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1xZGhhdnlhZXVqdWZobHFkbGZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NDg0OTUsImV4cCI6MjA5NTUyNDQ5NX0.bmlsVIXzQ1H-R4CEVZJzg_8TXygBsSQ57GOteBKqLHE';
+const MARCA='/storage/v1/object/public/task-files/';
+const ork=supabase.createClient(ORK_URL,ORK_KEY,{auth:{storageKey:'migracao-orkai',persistSession:false}});
+const im=supabase.createClient(IM_URL,IM_KEY);
+const logEl=document.getElementById('log');
+function log(m,c){const d=document.createElement('div');if(c)d.className=c;d.textContent=m;logEl.appendChild(d);logEl.scrollTop=1e9;}
+
+async function entrarOrkai(){
+  const {error}=await ork.auth.signInWithPassword({email:document.getElementById('em').value.trim(),password:document.getElementById('pw').value});
+  if(error)throw new Error('Login OrkAI: '+error.message);
+  const {data:f}=await ork.auth.mfa.listFactors();
+  const totp=f&&f.totp&&f.totp.find(x=>x.status==='verified');
+  if(totp){
+    const code=document.getElementById('mfa').value.trim();
+    if(code.length!==6)throw new Error('Digite o código de 6 dígitos do app autenticador da OrkAI.');
+    const {data:ch,error:e1}=await ork.auth.mfa.challenge({factorId:totp.id});
+    if(e1)throw new Error('MFA OrkAI: '+e1.message);
+    const {error:e2}=await ork.auth.mfa.verify({factorId:totp.id,challengeId:ch.id,code});
+    if(e2)throw new Error('Código OrkAI inválido: '+e2.message);
+  }
+}
+
+async function migrar(){
+  const btn=document.getElementById('go');btn.disabled=true;logEl.textContent='';
+  try{
+    const {data:{session}}=await im.auth.getSession();
+    if(!session)throw new Error('Você não está logado no painel da iMarcas neste navegador. Entre lá primeiro e volte aqui.');
+    log('Painel iMarcas: logado como '+session.user.email,'ok');
+    await entrarOrkai();
+    log('OrkAI: logado','ok');
+
+    const {data:tasks,error}=await im.from('imarcas_tasks').select('id,titulo,anexos');
+    if(error)throw new Error('Lendo tarefas: '+error.message);
+    let copiados=0,falhas=0,cards=0;
+    for(const t of tasks){
+      const lista=t.anexos||[];
+      if(!lista.some(a=>a.url&&a.url.indexOf(ORK_URL)===0))continue;
+      cards++;
+      const nova=[];
+      for(const a of lista){
+        if(!(a.url&&a.url.indexOf(ORK_URL)===0)){nova.push(a);continue;}
+        const path=decodeURIComponent(a.url.split(MARCA)[1]||'');
+        if(!path){nova.push(a);falhas++;log('  ✗ '+a.name+': link sem caminho','err');continue;}
+        const {data:blob,error:eDown}=await ork.storage.from('task-files').download(path);
+        if(eDown){nova.push(a);falhas++;log('  ✗ '+a.name+': '+eDown.message,'err');continue;}
+        const {error:eUp}=await im.storage.from('imarcas-files').upload(path,blob,{upsert:true,contentType:blob.type||undefined});
+        if(eUp){nova.push(a);falhas++;log('  ✗ '+a.name+': '+eUp.message,'err');continue;}
+        nova.push({name:a.name,path:path,cover:!!a.cover});
+        copiados++;
+      }
+      const {error:eUpd}=await im.from('imarcas_tasks').update({anexos:nova}).eq('id',t.id);
+      if(eUpd){log('✗ '+t.titulo+': '+eUpd.message,'err');}else{log('✓ '+t.titulo,'ok');}
+    }
+    log('');
+    log('Fim: '+copiados+' arquivos copiados em '+cards+' cards'+(falhas?', '+falhas+' falhas':'')+'.',falhas?'err':'ok');
+    if(!cards)log('Nenhum anexo da OrkAI encontrado. Já foi migrado?');
+    await ork.auth.signOut();
+  }catch(e){log(e.message||String(e),'err');}
+  btn.disabled=false;
+}
+</script>
+</body>
+</html>
