@@ -63,6 +63,387 @@
      }
     ]
    }
+  },
+  {
+   "id": "op-0002",
+   "type": "add",
+   "task": {
+    "id": "t-pele-onboarding",
+    "codigo": 88,
+    "titulo": "PELÉ · ONBOARDING E PAGAMENTO",
+    "coluna": "todo",
+    "area": "Pelé Esquadrias",
+    "prioridade": "alta",
+    "ordem": 20,
+    "pai": "t-cliente-pele-esquadrias",
+    "descricao": "⚠️ PRECISO DE VOCÊ: confirmar o combo fechado e o valor (registrar só no painel, aba Clientes — não aqui).\n\n**Objetivo:** deixar tudo pronto pra produção começar. Regra iMarcas: produção só depois do pagamento.\n\n**Quem:** Lucas + Cris · **Com o cliente:** Pelé",
+    "checklist": [
+     {
+      "t": "Confirmar combo e valor com o Pelé",
+      "done": false
+     },
+     {
+      "t": "Receber o pagamento (produção só começa depois)",
+      "done": false
+     },
+     {
+      "t": "Atualizar valor e vencimento na aba Clientes do painel",
+      "done": false
+     },
+     {
+      "t": "Criar grupo de WhatsApp iMarcas · Pelé Esquadrias (Lucas, Cris, Pelé)",
+      "done": false
+     },
+     {
+      "t": "Pegar @ do Instagram e senha (ou acesso de colaborador)",
+      "done": false
+     },
+     {
+      "t": "Acesso ao Meta Business: página, Instagram e conta de anúncios",
+      "done": false
+     },
+     {
+      "t": "Logo em alta e fotos de obras que ele já tem",
+      "done": false
+     },
+     {
+      "t": "Lista das linhas de produto que ele mais quer vender",
+      "done": false
+     },
+     {
+      "t": "Definir quem atende os leads do lado dele (ele, esposa ou vendedor)",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "op-0003",
+   "type": "add",
+   "task": {
+    "id": "t-pele-diagnostico",
+    "codigo": 89,
+    "titulo": "PELÉ · DIAGNÓSTICO DO INSTAGRAM",
+    "coluna": "todo",
+    "area": "Pelé Esquadrias",
+    "prioridade": "media",
+    "ordem": 30,
+    "pai": "t-cliente-pele-esquadrias",
+    "descricao": "**Objetivo:** fotografar o ponto de partida pra mostrar o antes/depois no fim do primeiro mês (mesmo formato dos cases Cris e Lugner).\n\n**O que já sabemos:** Google com nota 5,0 e 22 avaliações; elogios em material, montagem, prazo e formas de pagamento. Isso vira prova social no perfil e nos anúncios.\n\n**Saída:** 1 página com o que está bom, o que falta e o plano do mês 1.",
+    "checklist": [
+     {
+      "t": "Print do perfil atual (antes)",
+      "done": false
+     },
+     {
+      "t": "Avaliar foto de perfil, nome e bio",
+      "done": false
+     },
+     {
+      "t": "Avaliar destaques e posts fixados",
+      "done": false
+     },
+     {
+      "t": "Frequência de postagem nos últimos 30 dias",
+      "done": false
+     },
+     {
+      "t": "Olhar 3 concorrentes de esquadrias em Rio Preto",
+      "done": false
+     },
+     {
+      "t": "Separar as melhores avaliações do Google pra usar",
+      "done": false
+     },
+     {
+      "t": "Fechar plano do mês 1 e mandar no grupo",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "op-0004",
+   "type": "add",
+   "task": {
+    "id": "t-pele-captacao",
+    "codigo": 90,
+    "titulo": "PELÉ · CAPTAÇÃO EM OBRA (FOTO + VÍDEO)",
+    "coluna": "todo",
+    "area": "Pelé Esquadrias",
+    "prioridade": "alta",
+    "ordem": 40,
+    "pai": "t-cliente-pele-esquadrias",
+    "descricao": "**Objetivo:** num dia só, sair com material pro perfil, pros destaques e pros anúncios.\n\n**Onde:** uma obra bonita com esquadria já instalada (combinado na reunião: \"pega uma obra da hora\").\n**Formato:** vídeo vertical 9:16 + fotos.\n\n---\n\n**LISTA DE CENAS**\n- **Pelé na obra:** foto profissional (perfil) + plano aberto apresentando o trabalho\n- **Vídeo de apresentação** (30–45s): quem é, há quanto tempo faz, o que entrega, chamada pra orçamento\n- **Detalhes de acabamento:** perfil do alumínio, vedação, roldana correndo, fechadura — close macro\n- **Abre e fecha:** janela e porta funcionando, som do fechamento\n- **Montagem:** equipe instalando (bastidor)\n- **Resultado:** ambiente pronto, luz natural entrando\n- **Depoimento:** dono da obra ou arquiteto, 15–20s\n\n**ROTEIRO DO VÍDEO DE APRESENTAÇÃO**\n1. Gancho (0–3s): esquadria abrindo, Pelé entra no quadro\n2. Quem é (3–12s): nome, cidade, tempo de experiência\n3. Diferencial (12–30s): medida certa, montagem caprichada, prazo cumprido (o que os clientes elogiam no Google)\n4. Chamada (30–40s): \"Manda as medidas do seu projeto no WhatsApp que a gente monta seu orçamento.\"\n",
+    "checklist": [
+     {
+      "t": "Escolher a obra junto com o Pelé",
+      "done": false
+     },
+     {
+      "t": "Confirmar autorização do dono da obra",
+      "done": false
+     },
+     {
+      "t": "Agendar dia e horário (luz boa)",
+      "done": false
+     },
+     {
+      "t": "Foto profissional do Pelé",
+      "done": false
+     },
+     {
+      "t": "Vídeo de apresentação",
+      "done": false
+     },
+     {
+      "t": "Closes de acabamento",
+      "done": false
+     },
+     {
+      "t": "Janela e porta abrindo e fechando",
+      "done": false
+     },
+     {
+      "t": "Bastidor de montagem",
+      "done": false
+     },
+     {
+      "t": "Ambiente pronto",
+      "done": false
+     },
+     {
+      "t": "Depoimento do cliente ou arquiteto",
+      "done": false
+     },
+     {
+      "t": "Backup do material no mesmo dia",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "op-0005",
+   "type": "add",
+   "task": {
+    "id": "t-pele-perfil",
+    "codigo": 91,
+    "titulo": "PELÉ · PERFIL DO INSTAGRAM (BIO, DESTAQUES, FIXADOS)",
+    "coluna": "todo",
+    "area": "Pelé Esquadrias",
+    "prioridade": "media",
+    "ordem": 50,
+    "pai": "t-cliente-pele-esquadrias",
+    "descricao": "**Depende de:** captação feita (foto de perfil e vídeo de apresentação).\n\n**BIO (rascunho pra validar com ele)**\nEsquadrias de alumínio sob medida em Rio Preto\nProjeto, fabricação e montagem com prazo cumprido\n⭐ 5,0 no Google\n📲 Orçamento pelo WhatsApp ↓\n\n**DESTAQUES**\n- Obras (entregues)\n- Produtos (uma por linha que ele mais vende)\n- Avaliações (prints do Google)\n- Orçamento (como funciona: mandar medidas + região)\n- Quem somos\n\n**FIXADOS**\n1. Vídeo de apresentação\n2. Obra destaque\n3. Prova social (avaliações)",
+    "checklist": [
+     {
+      "t": "Trocar foto de perfil",
+      "done": false
+     },
+     {
+      "t": "Validar bio com o Pelé e aplicar",
+      "done": false
+     },
+     {
+      "t": "Link do WhatsApp com mensagem pronta",
+      "done": false
+     },
+     {
+      "t": "Capas dos destaques no padrão visual",
+      "done": false
+     },
+     {
+      "t": "Montar os 5 destaques",
+      "done": false
+     },
+     {
+      "t": "Publicar e fixar os 3 posts",
+      "done": false
+     },
+     {
+      "t": "Print do depois pro case",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "op-0006",
+   "type": "add",
+   "task": {
+    "id": "t-pele-conteudo",
+    "codigo": 92,
+    "titulo": "PELÉ · CALENDÁRIO DE CONTEÚDO",
+    "coluna": "todo",
+    "area": "Pelé Esquadrias",
+    "prioridade": "media",
+    "ordem": 60,
+    "pai": "t-cliente-pele-esquadrias",
+    "descricao": "**Objetivo:** perfil vivo toda semana, com conteúdo que atraia arquiteto e quem já está com a obra andando (lead ideal definido na reunião).\n\n**LINHAS DE CONTEÚDO**\n- **Obra entregue:** antes/depois, ambiente pronto\n- **Bastidor:** montagem, fábrica, medição\n- **Dica técnica:** pra arquiteto e dono de obra (quando medir, como escolher a linha, manutenção)\n- **Prova social:** avaliação do Google, depoimento\n- **Chamada:** \"mande as medidas do seu projeto\"\n\n**Frequência:** conforme o combo fechado (definir no onboarding).",
+    "checklist": [
+     {
+      "t": "Definir frequência pelo combo",
+      "done": false
+     },
+     {
+      "t": "Montar calendário do mês 1",
+      "done": false
+     },
+     {
+      "t": "Roteiros das primeiras 4 peças",
+      "done": false
+     },
+     {
+      "t": "Aprovação do Pelé no grupo",
+      "done": false
+     },
+     {
+      "t": "Agendar publicações",
+      "done": false
+     },
+     {
+      "t": "Rotina de pedir fotos de obra pra ele toda semana",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "op-0007",
+   "type": "add",
+   "task": {
+    "id": "t-pele-trafego",
+    "codigo": 93,
+    "titulo": "PELÉ · TRÁFEGO PAGO COM FORMULÁRIO",
+    "coluna": "todo",
+    "area": "Pelé Esquadrias",
+    "prioridade": "alta",
+    "ordem": 70,
+    "pai": "t-cliente-pele-esquadrias",
+    "descricao": "**Objetivo:** gerar orçamento de quem já tem projeto e obra andando — filtrar quem \"só quer saber o preço\" ou nem começou a obra.\n\n**Verba de anúncio:** separada da mensalidade (deixar por escrito).\n\n**FORMULÁRIO (perguntas da reunião)**\n1. Você é: arquiteto/engenheiro · dono da obra · construtora\n2. Já tem projeto com as medidas das esquadrias? sim · não\n3. Em que fase está a obra? estrutura/alvenaria · reboco/acabamento · ainda não começou\n4. Cidade/bairro da obra\n→ Nome e WhatsApp obrigatórios · e-mail opcional\n\n**Tratamento:** quem tem medida e obra andando = atendimento imediato. \"Ainda não começou\" = nutrição, não descartar (combinado na reunião).\n\n**Criativos:** usar o material da captação.",
+    "checklist": [
+     {
+      "t": "Definir verba mensal de anúncio",
+      "done": false
+     },
+     {
+      "t": "Validar perguntas do formulário com o Pelé",
+      "done": false
+     },
+     {
+      "t": "Público: Rio Preto e região + interesse em construção/reforma",
+      "done": false
+     },
+     {
+      "t": "Campanha de cadastro com formulário instantâneo",
+      "done": false
+     },
+     {
+      "t": "3 criativos com o material da captação",
+      "done": false
+     },
+     {
+      "t": "Ligar formulário ao CRM (lead cai sozinho)",
+      "done": false
+     },
+     {
+      "t": "Regra de resposta: lead quente respondido na hora",
+      "done": false
+     },
+     {
+      "t": "Relatório quinzenal no grupo",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "op-0008",
+   "type": "add",
+   "task": {
+    "id": "t-pele-crm",
+    "codigo": 94,
+    "titulo": "PELÉ · CRM (BRINDE)",
+    "coluna": "waiting",
+    "area": "Pelé Esquadrias",
+    "prioridade": "media",
+    "ordem": 80,
+    "pai": "t-cliente-pele-esquadrias",
+    "descricao": "⚠️ PRECISO DE VOCÊ: criar o projeto no Supabase (URL + chave anon) e o repositório mkticasas/crm-pele-esquadrias.\n\n**Base:** CRM da iCasas (o que foi mostrado na reunião), com funil adaptado pra esquadrias:\nNovo lead → Contato feito → Medição/visita → Orçamento enviado → Negociação → Fechado / Perdido\n\n**Ligação com a iMarcas:** slug `pele-esquadrias` — bloqueio automático pelo painel se o pagamento atrasar.\n\n**Fora do escopo por enquanto:** orçamento detalhado continua no Conta Azul dele.",
+    "checklist": [
+     {
+      "t": "Projeto Supabase criado",
+      "done": false
+     },
+     {
+      "t": "Repositório criado",
+      "done": false
+     },
+     {
+      "t": "CRM montado com o funil de esquadrias",
+      "done": false
+     },
+     {
+      "t": "Bloqueio do painel instalado (slug pele-esquadrias)",
+      "done": false
+     },
+     {
+      "t": "Link do CRM cadastrado na aba Clientes",
+      "done": false
+     },
+     {
+      "t": "Login do Pelé e de quem vai operar",
+      "done": false
+     },
+     {
+      "t": "Treinamento rápido (15 min) com quem vai alimentar",
+      "done": false
+     },
+     {
+      "t": "Formulário do tráfego caindo no CRM",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "op-0009",
+   "type": "update",
+   "task": {
+    "id": "t-cliente-pele-esquadrias",
+    "checklist": [
+     {
+      "t": "PELÉ · ONBOARDING E PAGAMENTO",
+      "done": false
+     },
+     {
+      "t": "PELÉ · DIAGNÓSTICO DO INSTAGRAM",
+      "done": false
+     },
+     {
+      "t": "PELÉ · CAPTAÇÃO EM OBRA (FOTO + VÍDEO)",
+      "done": false
+     },
+     {
+      "t": "PELÉ · PERFIL DO INSTAGRAM (BIO, DESTAQUES, FIXADOS)",
+      "done": false
+     },
+     {
+      "t": "PELÉ · CALENDÁRIO DE CONTEÚDO",
+      "done": false
+     },
+     {
+      "t": "PELÉ · TRÁFEGO PAGO COM FORMULÁRIO",
+      "done": false
+     },
+     {
+      "t": "PELÉ · CRM (BRINDE)",
+      "done": false
+     }
+    ],
+    "descricao": "**CLIENTE iMARCAS · Pelé Esquadrias de Alumínio**\n- **Endereço:** Av. Alfredo Teodoro de Oliveira, 2594, Sala 1 · Jardim das Oliveiras · São José do Rio Preto/SP\n- **Telefone/WhatsApp:** (17) 99241-6696\n- **Horário:** ter a sex 7h30–11h30 / 13h–18h · sáb 7h30–13h · fecha dom e seg (conferir a segunda)\n- **Google:** nota 5,0 com 22 avaliações. Elogios recorrentes: qualidade do material, montagem, prazo de entrega e opções de pagamento\n- **Presença digital:** não achei site nem Instagram indexado → levantar @ com ele\n\n---\n\n**O QUE FOI FECHADO NA REUNIÃO**\n- Combos apresentados: Bronze, Prata e Ouro (mensal)\n- Plano full + CRM de brinde (com o Cris, mesmo sistema que a iCasas usa)\n- Tráfego pago com formulário de qualificação (lead cai no CRM e já distribui pro vendedor)\n- Próximo passo combinado: criar grupo \"iMarcas · Pelé Esquadrias\" e agendar dia de captação numa obra boa\n\n**DORES QUE ELE TROUXE**\n- Não tem CRM — controla orçamento de cabeça/agenda\n- Usa Conta Azul só pra montar orçamento; acha ruim\n- Perde tempo com lead que só quer preço ou nem começou a obra\n\n**LEAD IDEAL (base pras perguntas do formulário)**\n- Arquiteto ou cliente final com projeto e medidas definidas\n- Obra em andamento ou pra começar em breve\n- Quem ainda nem começou a obra: não descartar, só não é a hora — atendimento diferente (nutrição), ciclo longo\n\n**PERGUNTAS DO FORMULÁRIO (rascunho)**\n1. Você é: arquiteto/engenheiro · dono da obra · construtora\n2. Já tem projeto com as medidas das esquadrias? sim · não\n3. Em que fase está a obra? estrutura/alvenaria · reboco/acabamento · ainda não começou\n4. Região da obra (cidade/bairro)\n→ Nome + WhatsApp obrigatório · e-mail opcional\n\n---\n\n**CARDS DESTE CLIENTE** (cada um marca o item aqui quando concluir)\n#000088 Onboarding e pagamento · #000089 Diagnóstico · #000090 Captação · #000091 Perfil · #000092 Calendário · #000093 Tráfego · #000094 CRM\n\n**RISCOS / PONTOS DE ATENÇÃO**\n- Diferença Ouro x Prata é pequena e o Ouro ainda leva CRM de graça → definir o que o CRM inclui e por quanto tempo é brinde\n- Verba de tráfego é separada da mensalidade → deixar escrito\n- Se ninguém alimentar o CRM do lado dele, o brinde não gera resultado"
+   }
   }
  ]
 }
