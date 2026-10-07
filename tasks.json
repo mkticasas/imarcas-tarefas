@@ -540,6 +540,184 @@
     ],
     "coluna": "doing"
    }
+  },
+  {
+   "id": "op-0014",
+   "type": "add",
+   "task": {
+    "id": "t-pele-visita",
+    "codigo": 95,
+    "titulo": "PELÉ · VISITA DE IMERSÃO (BRIEFING)",
+    "coluna": "todo",
+    "area": "Pelé Esquadrias",
+    "prioridade": "alta",
+    "ordem": 15,
+    "pai": "t-cliente-pele-esquadrias",
+    "descricao": "**Objetivo:** entender o negócio a fundo pra criar roteiros, bio, anúncio e formulário com a voz do Pelé. É o primeiro passo de tudo: sem isso os roteiros saem genéricos.\n\n**Quando:** esta semana, antes do pagamento do dia 15/10. Visita de entendimento não é produção — é parte do onboarding.\n**Duração:** 1h a 1h30 · **Onde:** na Pelé (Av. Alfredo Teodoro de Oliveira, 2594) e, se der, numa obra em andamento logo depois.\n**Quem vai:** Lucas (+ Cris, se puder)\n\n**Levar:** este PDF impresso, celular carregado pra gravar áudio e fotos, o [documento de concorrentes](https://claude.ai/code/artifact/e21e69c9-ff87-4222-9f45-b7c2052f143d).\n\n**Como conduzir:** deixar ele falar. As melhores falas viram roteiro — anotar frases do jeito que ele diz.\n\n**Depois da visita:** mandar o áudio aqui no chat que eu transformo em roteiros, bio e perguntas do formulário.",
+    "checklist": [
+     {
+      "t": "NEGÓCIO · Como a Pelé começou e há quanto tempo",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · Quantas pessoas na equipe e quem faz o quê (medição, fábrica, montagem)",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · Fabrica tudo ou compra pronto? Quais linhas de alumínio trabalha",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · Produtos que mais vendem e os que mais dão lucro",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · Ticket médio de uma obra e quantas obras fecha por mês",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · Capacidade: quantas obras a mais aguenta por mês sem atrasar",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · Região que atende (só Rio Preto ou cidades vizinhas)",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · Quem compra hoje: arquiteto, construtora ou dono da obra (%)",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · De onde vêm os clientes hoje (indicação, Google, arquiteto, passando na frente)",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · Em que fase da obra o cliente costuma chegar",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · Principais objeções (preço, prazo, desconfiança) e como responde",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · Por que um cliente escolheu a Pelé e não outro (pedir um caso real)",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · Cliente satisfeito que toparia gravar depoimento",
+      "done": false
+     },
+     {
+      "t": "CONCORRÊNCIA · Quem ele considera concorrente direto",
+      "done": false
+     },
+     {
+      "t": "CONCORRÊNCIA · O que faz melhor que eles e onde perde",
+      "done": false
+     },
+     {
+      "t": "PROCESSO · Passo a passo do primeiro contato até a entrega",
+      "done": false
+     },
+     {
+      "t": "PROCESSO · Prazo médio de entrega e o que costuma atrasar",
+      "done": false
+     },
+     {
+      "t": "PROCESSO · Garantia e pós-venda",
+      "done": false
+     },
+     {
+      "t": "PROCESSO · Formas de pagamento",
+      "done": false
+     },
+     {
+      "t": "CONTEÚDO · Obras em andamento que dá pra gravar nas próximas 2 semanas",
+      "done": false
+     },
+     {
+      "t": "CONTEÚDO · Obra pronta mais bonita (pra captação principal)",
+      "done": false
+     },
+     {
+      "t": "CONTEÚDO · Ele topa aparecer em vídeo? Fica à vontade falando pra câmera",
+      "done": false
+     },
+     {
+      "t": "CONTEÚDO · Tem fotos e vídeos antigos de obras (pedir pra mandar no grupo)",
+      "done": false
+     },
+     {
+      "t": "CONTEÚDO · Bordões, jeito de falar, histórias que ele conta pros clientes",
+      "done": false
+     },
+     {
+      "t": "ACESSOS · @ e senha do Instagram (ou acesso de colaborador)",
+      "done": false
+     },
+     {
+      "t": "ACESSOS · Meta Business e conta de anúncios",
+      "done": false
+     },
+     {
+      "t": "ACESSOS · Logo em arquivo",
+      "done": false
+     },
+     {
+      "t": "ACESSOS · Quem vai responder os leads e usar o CRM",
+      "done": false
+     },
+     {
+      "t": "NO LOCAL · Gravar áudio da conversa (pedir autorização) pra montar os roteiros",
+      "done": false
+     },
+     {
+      "t": "NO LOCAL · Fotografar fachada, fábrica, equipe e máquinas (material de referência)",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "op-0015",
+   "type": "update",
+   "task": {
+    "id": "t-cliente-pele-esquadrias",
+    "checklist": [
+     {
+      "t": "PELÉ · VISITA DE IMERSÃO (BRIEFING)",
+      "done": false
+     },
+     {
+      "t": "PELÉ · ONBOARDING E PAGAMENTO",
+      "done": false
+     },
+     {
+      "t": "PELÉ · DIAGNÓSTICO DO INSTAGRAM",
+      "done": false
+     },
+     {
+      "t": "PELÉ · CAPTAÇÃO EM OBRA (FOTO + VÍDEO)",
+      "done": false
+     },
+     {
+      "t": "PELÉ · PERFIL DO INSTAGRAM (BIO, DESTAQUES, FIXADOS)",
+      "done": false
+     },
+     {
+      "t": "PELÉ · CALENDÁRIO DE CONTEÚDO",
+      "done": false
+     },
+     {
+      "t": "PELÉ · TRÁFEGO PAGO COM FORMULÁRIO",
+      "done": false
+     },
+     {
+      "t": "PELÉ · CRM (BRINDE)",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
