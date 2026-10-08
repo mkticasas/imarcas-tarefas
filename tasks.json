@@ -826,6 +826,32 @@
      }
     ]
    }
+  },
+  {
+   "id": "op-0022",
+   "type": "update",
+   "task": {
+    "id": "t-legenda-video-frahm",
+    "descricao": "**Legenda:**\n\nDireto da fábrica da Frahm, em Rio do Sul (SC) 🔊\nTreinamento concluído: a iCasas Automação agora é homologada Frahm.\nProjetos de som para casas, lojas, mercados e bares em todo o Brasil.\n\n#iCasasAutomação #Frahm #AutomaçãoResidencial\n\n---\nGrafia Frahm confirmada. Falta revisar o corte do final do vídeo.",
+    "checklist": [
+     {
+      "t": "Legenda escrita",
+      "done": true
+     },
+     {
+      "t": "Grafia Frahm confirmada",
+      "done": true
+     },
+     {
+      "t": "Revisar corte final",
+      "done": false
+     },
+     {
+      "t": "Postar",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
