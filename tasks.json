@@ -794,6 +794,38 @@
     "id": "t-pele-crm",
     "descricao": "**Base:** CRM da iCasas (o que foi mostrado na reunião), com funil adaptado pra esquadrias:\nNovo lead → Contato feito → Medição/visita → Orçamento enviado → Negociação → Fechado / Perdido\n\n**Ligação com a iMarcas:** slug `pele-esquadrias` — bloqueio automático pelo painel se o pagamento atrasar.\n\n**Fora do escopo por enquanto:** orçamento detalhado continua no Conta Azul dele.\n\n**Montado em 08/10:** repositório mkticasas/crm-pele-esquadrias · Supabase yobtuzvmaimetwrejunk · admin pele@teste.com.br · link: mkticasas.github.io/crm-pele-esquadrias\n\n**08/10:** verificação em duas etapas desligada por enquanto (EXIGIR_2FA=false no index.html) — login só com e-mail e senha pra apresentação. Religar depois.\n\n**08/10:** WhatsApp de contato do CRM (botão do topo e tela de bloqueio) trocado pra (17) 99658-3080 (Lucas).\n\n**08/10:** logo da Pelé aplicada no login, topo e menu (em fundo branco, porque o texto da logo é preto)."
    }
+  },
+  {
+   "id": "op-0021",
+   "type": "add",
+   "task": {
+    "id": "t-legenda-video-frahm",
+    "codigo": 96,
+    "titulo": "LEGENDA · VÍDEO HOMOLOGAÇÃO FRAHM",
+    "coluna": "doing",
+    "area": "iCasas Automação",
+    "prioridade": "media",
+    "ordem": 10,
+    "descricao": "**Legenda:**\n\nDireto da fábrica da Frahm, em Rio do Sul (SC) 🔊\nTreinamento concluído: a iCasas Automação agora é homologada Frahm.\nProjetos de som para casas, lojas, mercados e bares em todo o Brasil.\n\n#iCasasAutomação #Frahm #AutomaçãoResidencial\n\n---\nConferir antes de postar: grafia/@ da Frahm (na transcrição saiu \"Fran\") e o corte do final do vídeo.",
+    "checklist": [
+     {
+      "t": "Legenda escrita",
+      "done": true
+     },
+     {
+      "t": "Confirmar @ da Frahm",
+      "done": false
+     },
+     {
+      "t": "Revisar corte final",
+      "done": false
+     },
+     {
+      "t": "Postar",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
