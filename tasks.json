@@ -727,6 +727,49 @@
     "descricao": "**Objetivo:** entender o negócio a fundo pra criar roteiros, bio, anúncio e formulário com a voz do Pelé. É o primeiro passo de tudo: sem isso os roteiros saem genéricos.\n\n**Quando:** terça 13/10 ou quarta 14/10 (mensagem pra agendar sai na quinta 08/10). Visita de entendimento não é produção — é parte do onboarding.\n**Duração:** 1h a 1h30 · **Onde:** na Pelé (Av. Alfredo Teodoro de Oliveira, 2594) e, se der, numa obra em andamento logo depois.\n**Quem vai:** Lucas (+ Cris, se puder)\n\n**Levar:** este PDF impresso, celular carregado pra gravar áudio e fotos, o [documento de concorrentes](https://claude.ai/code/artifact/e21e69c9-ff87-4222-9f45-b7c2052f143d).\n\n**Como conduzir:** deixar ele falar. As melhores falas viram roteiro — anotar frases do jeito que ele diz.\n\n**Depois da visita:** mandar o áudio aqui no chat que eu transformo em roteiros, bio e perguntas do formulário.",
     "prazo": "2026-10-14"
    }
+  },
+  {
+   "id": "op-0017",
+   "type": "update",
+   "task": {
+    "id": "t-pele-crm",
+    "checklist": [
+     {
+      "t": "Projeto Supabase criado",
+      "done": true
+     },
+     {
+      "t": "Repositório criado",
+      "done": true
+     },
+     {
+      "t": "CRM montado com o funil de esquadrias",
+      "done": true
+     },
+     {
+      "t": "Bloqueio do painel instalado (slug pele-esquadrias)",
+      "done": true
+     },
+     {
+      "t": "Link do CRM cadastrado na aba Clientes",
+      "done": false
+     },
+     {
+      "t": "Login do Pelé e de quem vai operar",
+      "done": false
+     },
+     {
+      "t": "Treinamento rápido (15 min) com quem vai alimentar",
+      "done": false
+     },
+     {
+      "t": "Formulário do tráfego caindo no CRM",
+      "done": false
+     }
+    ],
+    "descricao": "**Base:** CRM da iCasas (o que foi mostrado na reunião), com funil adaptado pra esquadrias:\nNovo lead → Contato feito → Medição/visita → Orçamento enviado → Negociação → Fechado / Perdido\n\n**Ligação com a iMarcas:** slug `pele-esquadrias` — bloqueio automático pelo painel se o pagamento atrasar.\n\n**Fora do escopo por enquanto:** orçamento detalhado continua no Conta Azul dele.\n\n**Montado em 08/10:** repositório mkticasas/crm-pele-esquadrias · Supabase yobtuzvmaimetwrejunk · admin pele@teste.com.br · link: mkticasas.github.io/crm-pele-esquadrias",
+    "coluna": "doing"
+   }
   }
  ]
 }
