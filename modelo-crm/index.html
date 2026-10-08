@@ -1230,6 +1230,8 @@ function setupSupportRealtime(){
 // ===== CONFIGURAÇÃO DO CLIENTE (trocar só estas 3 linhas) =====
 const SUPA_URL='COLE_AQUI_A_URL_DO_SUPABASE_DO_CLIENTE';
 const SUPA_KEY='COLE_AQUI_A_CHAVE_ANON_DO_CLIENTE';
+// Verificação em duas etapas (app autenticador): true = obrigatória, false = só e-mail e senha
+const EXIGIR_2FA=true;
 const ADMIN={email:'EMAIL_DO_ADMIN',name:'Admin',role:'admin'};
 // ===============================================================
 
@@ -1421,6 +1423,7 @@ async function doLogin(){
 // MFA verificado mas ainda não passou pelo desafio nesta sessão, exige o código antes de
 // liberar; se nunca configurou MFA, força a configuração; senão, libera direto.
 async function checkMfaAndProceed(){
+  if(!EXIGIR_2FA){ await finishLoginAfterAuth(); return; } // 2 fatores desligado
   const { data: aalData } = await db.auth.mfa.getAuthenticatorAssuranceLevel();
 
   if(aalData?.currentLevel === 'aal2'){
