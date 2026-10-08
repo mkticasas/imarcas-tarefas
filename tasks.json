@@ -778,6 +778,14 @@
     "id": "t-pele-crm",
     "descricao": "**Base:** CRM da iCasas (o que foi mostrado na reunião), com funil adaptado pra esquadrias:\nNovo lead → Contato feito → Medição/visita → Orçamento enviado → Negociação → Fechado / Perdido\n\n**Ligação com a iMarcas:** slug `pele-esquadrias` — bloqueio automático pelo painel se o pagamento atrasar.\n\n**Fora do escopo por enquanto:** orçamento detalhado continua no Conta Azul dele.\n\n**Montado em 08/10:** repositório mkticasas/crm-pele-esquadrias · Supabase yobtuzvmaimetwrejunk · admin pele@teste.com.br · link: mkticasas.github.io/crm-pele-esquadrias\n\n**08/10:** verificação em duas etapas desligada por enquanto (EXIGIR_2FA=false no index.html) — login só com e-mail e senha pra apresentação. Religar depois."
    }
+  },
+  {
+   "id": "op-0019",
+   "type": "update",
+   "task": {
+    "id": "t-pele-crm",
+    "descricao": "**Base:** CRM da iCasas (o que foi mostrado na reunião), com funil adaptado pra esquadrias:\nNovo lead → Contato feito → Medição/visita → Orçamento enviado → Negociação → Fechado / Perdido\n\n**Ligação com a iMarcas:** slug `pele-esquadrias` — bloqueio automático pelo painel se o pagamento atrasar.\n\n**Fora do escopo por enquanto:** orçamento detalhado continua no Conta Azul dele.\n\n**Montado em 08/10:** repositório mkticasas/crm-pele-esquadrias · Supabase yobtuzvmaimetwrejunk · admin pele@teste.com.br · link: mkticasas.github.io/crm-pele-esquadrias\n\n**08/10:** verificação em duas etapas desligada por enquanto (EXIGIR_2FA=false no index.html) — login só com e-mail e senha pra apresentação. Religar depois.\n\n**08/10:** WhatsApp de contato do CRM (botão do topo e tela de bloqueio) trocado pra (17) 99658-3080 (Lucas)."
+   }
   }
  ]
 }
