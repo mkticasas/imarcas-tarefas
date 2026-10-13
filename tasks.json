@@ -1862,6 +1862,49 @@
     "descricao": "**CLIENTE iMARCAS · Pelé Esquadrias de Alumínio**\n- **Endereço:** Av. Alfredo Teodoro de Oliveira, 2594, Sala 1 · Jardim das Oliveiras · São José do Rio Preto/SP\n- **Telefone/WhatsApp:** (17) 99241-6696\n- **Horário:** ter a sex 7h30–11h30 / 13h–18h · sáb 7h30–13h · fecha dom e seg (conferir a segunda)\n- **Google:** nota 5,0 com 22 avaliações. Elogios recorrentes: qualidade do material, montagem, prazo de entrega e opções de pagamento\n- **Presença digital:** não achei site nem Instagram indexado → levantar @ com ele\n\n---\n\n**O QUE FOI FECHADO NA REUNIÃO**\n- Combos apresentados: Bronze, Prata e Ouro (mensal)\n- Plano full + CRM de brinde (com o Cris, mesmo sistema que a iCasas usa)\n- Tráfego pago com formulário de qualificação (lead cai no CRM e já distribui pro vendedor)\n- Próximo passo combinado: criar grupo \"iMarcas · Pelé Esquadrias\" e agendar dia de captação numa obra boa\n\n**DORES QUE ELE TROUXE**\n- Não tem CRM — controla orçamento de cabeça/agenda\n- Usa Conta Azul só pra montar orçamento; acha ruim\n- Perde tempo com lead que só quer preço ou nem começou a obra\n\n**LEAD IDEAL (base pras perguntas do formulário)**\n- Arquiteto ou cliente final com projeto e medidas definidas\n- Obra em andamento ou pra começar em breve\n- Quem ainda nem começou a obra: não descartar, só não é a hora — atendimento diferente (nutrição), ciclo longo\n\n**PERGUNTAS DO FORMULÁRIO (rascunho)**\n1. Você é: arquiteto/engenheiro · dono da obra · construtora\n2. Já tem projeto com as medidas das esquadrias? sim · não\n3. Em que fase está a obra? estrutura/alvenaria · reboco/acabamento · ainda não começou\n4. Região da obra (cidade/bairro)\n→ Nome + WhatsApp obrigatório · e-mail opcional\n\n---\n\n**BRIEFING 13/10 — O QUE MUDOU**\n- **Ideia central:** em vez de \"solicite orçamento\", o cliente **monta o próprio orçamento** num catálogo com fotos: escolhe o item (porta de entrada, garagem, janela…), o modelo, digita largura × altura e a quantidade. Sem preço na tela. Chega pronto no CRM e no WhatsApp do Pelé → card #000098.\n- **Orçamento inicial não precisa de visita:** medida aproximada basta (variação de até 10 cm é aceitável); a medição final ajusta depois.\n- **Casas de condomínio são quase iguais:** fachada de vidro, porta de garagem de lambril, porta de entrada ripada, porta gourmet 5 folhas (~5 × 2,5 m), janela da sala, box. Muda a fachada (vidro incolor, espelhado, pele de vidro). Dá pra ter um \"kit casa padrão\".\n- **Quem define nº de folhas é o Pelé**, não o cliente — o cliente só manda a medida.\n- **Aproveitamento de material:** tirar item muda o preço, porque sobra mais alumínio e o Pelé repassa esse custo. O cliente não entende e acha que é enganação; concorrentes não mudam o preço porque reaproveitam a sucata em outra obra. O orçamento precisa **explicar** a diferença → #000100.\n- **Pensamento de preço dele:** sobra de alumínio é lucro e tem que ser repassada; margem de referência ~30%. Não dá desconto por item avulso.\n- **Ele quer contratar alguém só pra fazer orçamento** — o sistema precisa ser simples pra uma pessoa nova.\n- **Material:** tem muitas fotos e vídeos (portas, box, produção, fachadas) e um catálogo feito pela esposa.\n\n**CRM DA PELÉ — 3 FASES (combinado em 13/10)**\n1. **CRM no celular** — base de tudo, começa já → #000101\n2. **Auto-orçamento pelo link** (anúncio) — cliente monta o pedido sem preço, cai no CRM → #000098\n3. **Orçamento no CRM** — Pelé precifica, gera PDF e manda → #000100\n\n**CARDS DESTE CLIENTE** (cada um marca o item aqui quando concluir)\n#000088 Onboarding e pagamento · #000089 Diagnóstico · #000090 Captação · #000091 Perfil · #000092 Calendário · #000093 Tráfego · #000094 CRM · #000095 Visita · #000098 Monte seu orçamento · #000099 Material do Pelé\n\n**RISCOS / PONTOS DE ATENÇÃO**\n- Diferença Ouro x Prata é pequena e o Ouro ainda leva CRM de graça → definir o que o CRM inclui e por quanto tempo é brinde\n- Verba de tráfego é separada da mensalidade → deixar escrito\n- Se ninguém alimentar o CRM do lado dele, o brinde não gera resultado"
    },
    "id": "op-0043"
+  },
+  {
+   "id": "op-0044",
+   "type": "update",
+   "task": {
+    "id": "t-pele-crm-mobile",
+    "checklist": [
+     {
+      "t": "Mapear as telas que ficam ruins no celular (prints)",
+      "done": true
+     },
+     {
+      "t": "Menu inferior fixo",
+      "done": true
+     },
+     {
+      "t": "Funil com rolagem lateral",
+      "done": true
+     },
+     {
+      "t": "Card do lead com WhatsApp/ligar",
+      "done": true
+     },
+     {
+      "t": "Formulários em tela cheia",
+      "done": true
+     },
+     {
+      "t": "Dashboard resumido",
+      "done": true
+     },
+     {
+      "t": "Ícone na tela inicial (PWA)",
+      "done": true
+     },
+     {
+      "t": "Testar no celular do Pelé",
+      "done": false
+     }
+    ],
+    "descricao": "**Fase 1 de 3 do CRM da Pelé.** Base pras outras duas: o Pelé vai usar tudo pelo celular.\n\n**Problema:** o CRM foi feito pra computador; no celular fica apertado e difícil de usar.\n\n**O que muda:**\n- Menu de baixo fixo (Funil · Leads · Orçamentos · Mais), estilo app\n- Funil em colunas que rolam de lado, um estágio por tela\n- Card do lead grande, com botão de WhatsApp e ligar em um toque\n- Formulários em tela cheia, campos grandes, teclado numérico em medida e telefone\n- Dashboard resumido no topo (leads novos, orçamentos abertos, fechados no mês)\n- Ícone na tela inicial do celular (abre como app)\n\n**Não depende do Pelé** — dá pra começar já.\n\n**Feito em 13/10:**\n- Topo enxuto: logo, WhatsApp (ícone) e avatar; relógio e botões extras somem no celular\n- Funil: abas de estágio com contagem (toque leva até a coluna), uma coluna por tela com encaixe ao rolar\n- Lista de leads e \"Leads recentes\" viram cards; filtros recolhidos atrás do botão \"Filtros\"\n- Detalhe do lead: botões grandes de mover estágio + WhatsApp + Ligar; o botão + some com o detalhe aberto\n- Campos com fonte 16px (o iPhone para de dar zoom ao tocar)\n- Ícone na tela inicial: Safari → Compartilhar → Adicionar à Tela de Início\n- Correção: \"mover estágio\" e \"editar\" quebravam com os IDs do banco novo — corrigido aqui e no modelo padrão\n\n**Pendente:** levar as melhorias de celular pro modelo padrão de CRM da iMarcas.",
+    "coluna": "doing"
+   }
   }
  ]
 }
