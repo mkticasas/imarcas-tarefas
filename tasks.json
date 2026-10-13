@@ -959,6 +959,151 @@
     "titulo": "FOTOS · CASA SOLANGE (ENTREGA)",
     "descricao": "**Hoje (13/10):** fotos da casa da Solange, que vamos entregar.\n\n**Padrão:** 2 fotos por cômodo, na ordem do checklist. Horizontal pra portfólio/site, vertical pro Instagram quando der.\n\n**Antes de começar:** luzes acesas, cortinas abertas, casa limpa, nada de obra à vista (balde, sacola, fita).\n\n**Checklist montado no padrão** (1 suíte, 2 quartos, 1 banheiro social, garagem). Se a casa for diferente, risca à mão no impresso e me fala que eu ajusto o card."
    }
+  },
+  {
+   "id": "op-0025",
+   "type": "update",
+   "task": {
+    "id": "t-pele-visita",
+    "titulo": "PELÉ · VISITA DE BRIEFING",
+    "descricao": "**Objetivo:** sair da Pelé com o que precisa pra escrever roteiros, bio, anúncio e formulário com a voz dele — e com os acessos que estão travando o #000088.\n\n**Duração:** 1h a 1h30 · **Onde:** Av. Alfredo Teodoro de Oliveira, 2594 (Jd. das Oliveiras) e, se der, uma obra em andamento logo depois.\n**Atenção:** a loja aparece fechada às segundas no Google.\n\n---\n\n**ROTEIRO DA VISITA**\n1. **Quebra-gelo (5 min):** pedir pra ele mostrar a empresa — fábrica, máquinas, estoque. Quem mostra o próprio espaço fala mais solto.\n2. **A história e o negócio (15 min):** deixar ele contar. É daqui que sai o vídeo de apresentação.\n3. **O cliente (15 min):** quem compra, por que escolhe a Pelé, o que trava a venda.\n4. **Processo (10 min):** do primeiro contato à entrega. Vira conteúdo de bastidor e resposta de destaque.\n5. **Mostrar o CRM (10 min):** abrir no celular dele, criar um lead de teste, mover no funil. Combinar quem vai usar.\n6. **Conteúdo e acessos (10 min):** obras pra gravar, se ele topa aparecer, acessos do Instagram e Meta.\n7. **Fechamento (5 min):** marcar o dia da captação e explicar o que acontece até lá.\n\n---\n\n**COMO CONDUZIR**\n- Gravar o áudio da conversa (pedir antes). As frases dele viram o texto dos vídeos.\n- Perguntar \"me conta de uma vez que…\" em vez de \"como funciona…\". História rende mais que explicação.\n- Anotar frases do jeito que ele fala, com as palavras dele.\n- Não vender nem prometer prazo de resultado. Hoje é só ouvir.\n\n**PERGUNTAS QUE MAIS RENDEM ROTEIRO**\n- \"Qual a obra que você mais tem orgulho? Por quê?\"\n- \"O que o cliente mais erra na hora de comprar esquadria?\"\n- \"Qual a pergunta que todo cliente faz?\"\n- \"Por que um cliente escolheu vocês e não outra empresa? Me conta um caso.\"\n- \"O que te irrita quando vê o trabalho de outra empresa?\"\n\n---\n\n**DEPOIS DA VISITA:** mandar o áudio aqui no chat. Eu transformo em roteiro do vídeo de apresentação, bio, perguntas do formulário e calendário do mês 1.\n\n**Material de apoio:** [concorrentes e diagnóstico](https://claude.ai/code/artifact/e21e69c9-ff87-4222-9f45-b7c2052f143d) · CRM: mkticasas.github.io/crm-pele-esquadrias",
+    "checklist": [
+     {
+      "t": "ANTES · Confirmar dia e horário com o Pelé",
+      "done": false
+     },
+     {
+      "t": "ANTES · Imprimir este card (Exportar PDF)",
+      "done": false
+     },
+     {
+      "t": "ANTES · Testar o login do CRM e deixar 1 lead de exemplo",
+      "done": false
+     },
+     {
+      "t": "ANTES · Celular carregado + espaço pra áudio e fotos",
+      "done": false
+     },
+     {
+      "t": "ANTES · Ler o documento de concorrentes (5 min)",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · Como começou e há quanto tempo",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · Equipe: quem mede, quem fabrica, quem monta",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · Fabrica tudo ou compra pronto? Linhas de alumínio que trabalha",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · O que mais vende e o que mais dá lucro",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · Quantas obras fecha por mês e quantas a mais aguenta sem atrasar",
+      "done": false
+     },
+     {
+      "t": "NEGÓCIO · Região que atende",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · Quem compra: arquiteto, construtora ou dono da obra",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · De onde vêm os clientes hoje",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · Em que fase da obra o cliente chega",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · Principais objeções e como responde",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · Caso real: por que escolheram a Pelé",
+      "done": false
+     },
+     {
+      "t": "CLIENTE · Cliente que toparia gravar depoimento",
+      "done": false
+     },
+     {
+      "t": "PROCESSO · Passo a passo do contato à entrega",
+      "done": false
+     },
+     {
+      "t": "PROCESSO · Prazo médio e o que costuma atrasar",
+      "done": false
+     },
+     {
+      "t": "PROCESSO · Garantia, pós-venda e formas de pagamento",
+      "done": false
+     },
+     {
+      "t": "CRM · Mostrar no celular dele: criar lead e mover no funil",
+      "done": false
+     },
+     {
+      "t": "CRM · Definir quem vai usar (ele, esposa, vendedor) e pegar os e-mails",
+      "done": false
+     },
+     {
+      "t": "CONTEÚDO · Obras andando pra gravar nas próximas 2 semanas",
+      "done": false
+     },
+     {
+      "t": "CONTEÚDO · Obra pronta mais bonita (captação principal)",
+      "done": false
+     },
+     {
+      "t": "CONTEÚDO · Ele topa aparecer falando pra câmera?",
+      "done": false
+     },
+     {
+      "t": "CONTEÚDO · Pedir fotos e vídeos antigos de obra no grupo",
+      "done": false
+     },
+     {
+      "t": "ACESSOS · @ e acesso do Instagram",
+      "done": false
+     },
+     {
+      "t": "ACESSOS · Meta Business e conta de anúncios",
+      "done": false
+     },
+     {
+      "t": "ACESSOS · Logo em alta (já temos a vetorizada) e cores da marca",
+      "done": false
+     },
+     {
+      "t": "NO LOCAL · Gravar áudio da conversa (com autorização)",
+      "done": false
+     },
+     {
+      "t": "NO LOCAL · Fotos de referência: fachada, fábrica, equipe, máquinas",
+      "done": false
+     },
+     {
+      "t": "FECHAMENTO · Marcar o dia da captação",
+      "done": false
+     },
+     {
+      "t": "DEPOIS · Mandar o áudio no chat pra virar roteiro",
+      "done": false
+     }
+    ],
+    "coluna": "todo",
+    "prioridade": "alta"
+   }
   }
  ]
 }
