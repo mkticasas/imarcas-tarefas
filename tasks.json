@@ -1104,6 +1104,47 @@
     "coluna": "todo",
     "prioridade": "alta"
    }
+  },
+  {
+   "id": "op-0026",
+   "type": "update",
+   "task": {
+    "id": "t-cliente-pele-esquadrias",
+    "checklist": [
+     {
+      "t": "PELÉ · VISITA DE BRIEFING",
+      "done": false
+     },
+     {
+      "t": "PELÉ · ONBOARDING E PAGAMENTO",
+      "done": false
+     },
+     {
+      "t": "PELÉ · DIAGNÓSTICO DO INSTAGRAM",
+      "done": false
+     },
+     {
+      "t": "PELÉ · CAPTAÇÃO EM OBRA (FOTO + VÍDEO)",
+      "done": false
+     },
+     {
+      "t": "PELÉ · PERFIL DO INSTAGRAM (BIO, DESTAQUES, FIXADOS)",
+      "done": false
+     },
+     {
+      "t": "PELÉ · CALENDÁRIO DE CONTEÚDO",
+      "done": false
+     },
+     {
+      "t": "PELÉ · TRÁFEGO PAGO COM FORMULÁRIO",
+      "done": false
+     },
+     {
+      "t": "PELÉ · CRM (BRINDE)",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
