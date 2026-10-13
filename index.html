@@ -1952,6 +1952,20 @@ function tkColSorted(colId){
       return (a.criado||'')<(b.criado||'')?-1:1;
     });
 }
+// ao arrastar um card pra Concluído, marca o checklist inteiro como feito
+async function tkMarcarCkAoConcluir(t,colId){
+  const col=TK_COLS.find(function(x){return x.id===colId;});
+  const ehDone=colId==='done'||(col&&tkSlug(col.n)==='concluido');
+  if(!ehDone)return;
+  const ck=t.checklist||[];
+  if(!ck.length||ck.every(function(i){return i.done;}))return;
+  const novo=ck.map(function(i){return Object.assign({},i,{done:true});});
+  const {error}=await db.from('imarcas_tasks').update({checklist:novo}).eq('id',t.id);
+  if(error){showToast('Erro ao marcar checklist: '+error.message,'error');return;}
+  t.checklist=novo;
+  renderTasks();
+  showToast('Checklist marcado por completo','success');
+}
 // grava a ordem sequencial de uma coluna (só atualiza o que mudou)
 async function tkApplyOrder(colId, orderedIds){
   for(let i=0;i<orderedIds.length;i++){
@@ -1985,6 +1999,7 @@ function renderTasks(){
         ids.push(id);
         t.coluna=c.id;renderTasks();
         await tkApplyOrder(c.id,ids);
+        await tkMarcarCkAoConcluir(t,c.id);
         await tkSincronizarPai(t);
       }
     });
@@ -2012,7 +2027,10 @@ function wsForaDaConta(t){
   const c=tkResolveCol(t.coluna);
   if(c==='done')return true;
   const col=TK_COLS.find(function(x){return x.id===c;});
-  return !!(col&&tkSlug(col.n)==='utilitarios');
+  if(!col)return false;
+  const s=tkSlug(col.n);
+  // Concluído e Cancelado saem da contagem das áreas — já não são trabalho pendente.
+  return s==='utilitarios'||s==='concluido'||s==='cancelado'||s==='cancelados';
 }
 function wsDaArea(){
   const q=(document.getElementById('tkSearch').value||'').toLowerCase();
@@ -2034,7 +2052,7 @@ function wsRenderLateral(){
     return String(x.n||'').localeCompare(String(y.n||''),'pt-BR',{sensitivity:'base'});
   }).forEach(function(a){
     const n=cont[a.id]||0;
-    if(!n&&tkFiltroArea!==a.id)return;
+    // lista todas as áreas, mesmo sem tarefa pendente
     h+='<div class="ws-item'+(tkFiltroArea===a.id?' on':'')+'" onclick="tkSetFiltro(\''+a.id+'\')">'+
        '<span class="ws-bola" style="background:'+a.c+'"></span>'+tkIc(a)+tkEsc(a.n)+'<span class="ws-cnt">'+n+'</span></div>';
   });
@@ -2402,7 +2420,9 @@ function openTaskModal(id){
   fd.style.height=Math.min(Math.max(fd.scrollHeight,170),460)+'px';
   tkPrevMode(t?'view':'edit');
   tkRenderLinks();
-  document.getElementById('tk-area').value=t?tkResolveArea(t.area):(TK_AREAS[0]||{}).id;
+  // card novo já vem com a área que está filtrada na lateral; sem filtro, cai na primeira
+  document.getElementById('tk-area').value=t?tkResolveArea(t.area)
+    :(tkFiltroArea&&TK_AREAS.some(function(a){return a.id===tkFiltroArea;})?tkFiltroArea:(TK_AREAS[0]||{}).id);
   document.getElementById('tk-prio').value=t?(t.prioridade||'media'):'media';
   document.getElementById('tk-col').value=t?tkResolveCol(t.coluna):tkResolveCol('todo');
   document.getElementById('tk-prazo').value=t?(t.prazo||''):'';
