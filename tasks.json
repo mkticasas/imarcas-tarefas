@@ -950,6 +950,15 @@
      }
     ]
    }
+  },
+  {
+   "id": "op-0024",
+   "type": "update",
+   "task": {
+    "id": "t-fotos-casa-entrega-1310",
+    "titulo": "FOTOS · CASA SOLANGE (ENTREGA)",
+    "descricao": "**Hoje (13/10):** fotos da casa da Solange, que vamos entregar.\n\n**Padrão:** 2 fotos por cômodo, na ordem do checklist. Horizontal pra portfólio/site, vertical pro Instagram quando der.\n\n**Antes de começar:** luzes acesas, cortinas abertas, casa limpa, nada de obra à vista (balde, sacola, fita).\n\n**Checklist montado no padrão** (1 suíte, 2 quartos, 1 banheiro social, garagem). Se a casa for diferente, risca à mão no impresso e me fala que eu ajusto o card."
+   }
   }
  ]
 }
