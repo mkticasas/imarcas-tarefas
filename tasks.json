@@ -852,6 +852,104 @@
      }
     ]
    }
+  },
+  {
+   "id": "op-0023",
+   "type": "add",
+   "task": {
+    "id": "t-fotos-casa-entrega-1310",
+    "codigo": 97,
+    "titulo": "FOTOS · CASA ENTREGUE (13/10)",
+    "coluna": "doing",
+    "area": "iCasas Construtora",
+    "prioridade": "alta",
+    "ordem": 10,
+    "dia": "2026-10-13",
+    "prazo": "2026-10-13",
+    "descricao": "**Hoje (13/10):** fotos da casa que vamos entregar.\n\n**Padrão:** 2 fotos por cômodo, na ordem do checklist. Horizontal pra portfólio/site, vertical pro Instagram quando der.\n\n**Antes de começar:** luzes acesas, cortinas abertas, casa limpa, nada de obra à vista (balde, sacola, fita).\n\n**Checklist montado no padrão** (1 suíte, 2 quartos, 1 banheiro social, garagem). Se a casa for diferente, risca à mão no impresso e me fala que eu ajusto o card.\n\n**Depois:** me manda o endereço/nome do cliente pra eu registrar aqui.",
+    "checklist": [
+     {
+      "t": "Conferir luzes acesas, cortinas abertas e casa limpa",
+      "done": false
+     },
+     {
+      "t": "Tampas de vaso fechadas e armários fechados",
+      "done": false
+     },
+     {
+      "t": "Fachada frontal (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Fachada em ângulo / diagonal (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Entrada e portão (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Sala de estar (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Cozinha (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Suíte 1 (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Banheiro da suíte 1 (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Quarto 1 (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Quarto 2 (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Banheiro social (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Lavanderia / área de serviço (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Garagem (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Quintal / fundos (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Automação funcionando: luz pela Alexa ou app (2 fotos + vídeo)",
+      "done": false
+     },
+     {
+      "t": "Acabamentos: porcelanato, bancadas, esquadrias (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Vídeo geral: caminhada da entrada até os fundos (vertical)",
+      "done": false
+     },
+     {
+      "t": "Foto da chave / entrega, se houver cliente",
+      "done": false
+     },
+     {
+      "t": "Backup do material no mesmo dia",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
