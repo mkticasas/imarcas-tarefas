@@ -2163,6 +2163,59 @@
     "id": "t-ideia-orcamento-esquadrias",
     "descricao": "**Fase 3 de 3 do CRM da Pelé.** Onde o Pelé (ou o funcionário que ele vai contratar) monta o orçamento com valores e manda o PDF.\n\n**Fluxo**\n1. Abre um pedido que chegou pelo link (fase 2) ou cria um do zero dentro do lead\n2. Cada item já vem com foto, modelo e medida → ele coloca o valor\n3. Desconto, condição de pagamento, prazo de entrega, validade\n4. **Gerar PDF** com logo da Pelé, dados do cliente, foto de cada item, medidas, valor por item e total\n5. Manda pelo WhatsApp em um toque; o lead anda no funil pra \"Orçamento enviado\"\n\n**Aproveitamento de material (corrigido em 13/10):** tirar ou mudar item **muda sim o preço** — com menos itens, sobra mais alumínio e vidro, e o Pelé repassa esse custo (sobra é lucro, não prejuízo dele). Os concorrentes não mudam o preço porque absorvem a sobra e reaproveitam a sucata em outra obra.\n**O problema real é o cliente não entender** e achar que está sendo enganado. Então o orçamento tem que **explicar a diferença**:\n- Linha separada **\"Ajuste de aproveitamento de material\"**, com o valor\n- Texto curto no PDF: \"Quanto mais itens no mesmo pedido, melhor o aproveitamento das barras de alumínio e do vidro — por isso o valor por item cai quando o pedido é completo.\"\n- Mostrar como vantagem: **\"Fechando todos os itens você economiza R$ X\"** (valor avulso × valor do pacote)\n- Ao tirar um item, o sistema mostra o antes e o depois, em vez de só trocar os números\n\n**Simples pra funcionário novo:** catálogo enxuto, só os itens que a Pelé realmente faz (sem as 80 páginas do sistema atual).\n\n**Decisão pendente com o Pelé:** como ele calcula o preço — por m² de cada modelo, por peça, ou por kg de alumínio + vidro. Isso define a tela de cálculo. Ver #000099.\n\n**Ponto em aberto:** de onde vem o valor do aproveitamento — calculado pelo CRM (barras de 6 m, kg de perfil) ou lançado pelo Pelé a partir do sistema atual. Primeira versão: o Pelé lança o ajuste; cálculo automático depois.\n\n**Depois:** se funcionar bem na Pelé, vira módulo do modelo de CRM da iMarcas pra outras empresas de esquadria (ideia que o próprio Pelé deu).\n\n**Como calcula (flexível, definido em 14/10):** cada item aceita valor direto **ou** preço por m² do modelo (o CRM multiplica largura × altura × quantidade). Mais a linha de ajuste de aproveitamento. Assim funciona qualquer que seja o método do Pelé — a resposta dele só define o padrão.\n**Onde fica:** nova aba \"Orçamentos\" no CRM; os pedidos do site chegam ali como \"Aguardando valores\".\n\n**Feito em 14/10 (aba Orçamentos no CRM):**\n- Lista por status: Aguardando valores (pedidos do site) · Rascunho · Enviado · Aprovado · Recusado\n- Editor: itens do catálogo ou livres, largura × altura em metros, cobrança por m² ou unidade, subtotal por item\n- Ajuste de aproveitamento (com motivo) + desconto em R$ ou %, total na hora\n- PDF com logo, itens, totais, explicação do aproveitamento, condições e aviso de medição final; opção de esconder valor por item\n- Botão Enviar: no celular compartilha o PDF direto pro WhatsApp; no computador baixa e abre a conversa\n- Ao enviar/aprovar, o lead anda no funil e recebe o valor\n- Botão \"Orçamento\" dentro do lead · aba Catálogo pra editar produtos, preços e fotos\n- Banco: orcamentos.sql (tabelas, segurança, função pública pro site e catálogo de exemplo)\n\n**Falta:** \"economize fechando tudo\" (precisa do valor avulso) e testar com orçamento real do Pelé.\n\n**14/10 — dois tipos de produto no catálogo:**\n- **Linha pronta:** tamanhos fixos com preço fechado (do catálogo da Pelé). No orçamento escolhe o tamanho e o preço vem sozinho; \"Outra medida\" vira sob medida.\n- **Sob medida:** largura × altura livres, cobrado por m².\nO site vai mostrar a linha pronta com os tamanhos (sem preço) e o sob medida com campo de medida."
    }
+  },
+  {
+   "id": "op-0051",
+   "type": "update",
+   "task": {
+    "id": "t-ideia-orcamento-esquadrias",
+    "checklist": [
+     {
+      "t": "Rodar orcamentos.sql no Supabase da Pelé",
+      "done": true
+     },
+     {
+      "t": "Pelé explicar como calcula o preço (m², peça ou kg)",
+      "done": false
+     },
+     {
+      "t": "Ver o orçamento PDF atual dele como referência",
+      "done": false
+     },
+     {
+      "t": "Catálogo de itens/modelos dentro do CRM (editável)",
+      "done": true
+     },
+     {
+      "t": "Tela do orçamento: itens, valor, desconto, condições",
+      "done": true
+     },
+     {
+      "t": "Ajuste de aproveitamento em linha separada, com explicação no PDF",
+      "done": true
+     },
+     {
+      "t": "Mostrar economia do pedido completo × itens avulsos",
+      "done": false
+     },
+     {
+      "t": "PDF com logo, fotos, medidas e total",
+      "done": true
+     },
+     {
+      "t": "Botão enviar pelo WhatsApp",
+      "done": true
+     },
+     {
+      "t": "Lead anda pra Orçamento Enviado",
+      "done": true
+     },
+     {
+      "t": "Testar com um orçamento real do Pelé",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
