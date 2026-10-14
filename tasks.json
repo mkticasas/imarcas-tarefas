@@ -1905,6 +1905,131 @@
     "descricao": "**Fase 1 de 3 do CRM da Pelé.** Base pras outras duas: o Pelé vai usar tudo pelo celular.\n\n**Problema:** o CRM foi feito pra computador; no celular fica apertado e difícil de usar.\n\n**O que muda:**\n- Menu de baixo fixo (Funil · Leads · Orçamentos · Mais), estilo app\n- Funil em colunas que rolam de lado, um estágio por tela\n- Card do lead grande, com botão de WhatsApp e ligar em um toque\n- Formulários em tela cheia, campos grandes, teclado numérico em medida e telefone\n- Dashboard resumido no topo (leads novos, orçamentos abertos, fechados no mês)\n- Ícone na tela inicial do celular (abre como app)\n\n**Não depende do Pelé** — dá pra começar já.\n\n**Feito em 13/10:**\n- Topo enxuto: logo, WhatsApp (ícone) e avatar; relógio e botões extras somem no celular\n- Funil: abas de estágio com contagem (toque leva até a coluna), uma coluna por tela com encaixe ao rolar\n- Lista de leads e \"Leads recentes\" viram cards; filtros recolhidos atrás do botão \"Filtros\"\n- Detalhe do lead: botões grandes de mover estágio + WhatsApp + Ligar; o botão + some com o detalhe aberto\n- Campos com fonte 16px (o iPhone para de dar zoom ao tocar)\n- Ícone na tela inicial: Safari → Compartilhar → Adicionar à Tela de Início\n- Correção: \"mover estágio\" e \"editar\" quebravam com os IDs do banco novo — corrigido aqui e no modelo padrão\n\n**Pendente:** levar as melhorias de celular pro modelo padrão de CRM da iMarcas.",
     "coluna": "doing"
    }
+  },
+  {
+   "id": "op-0045",
+   "type": "update",
+   "task": {
+    "id": "t-fotos-casa-entrega-1310",
+    "titulo": "FOTOS + VÍDEO ENTREGA · CASA SOLANGE (14/10 14H)",
+    "dia": "2026-10-14",
+    "prazo": "2026-10-14",
+    "descricao": "**Remarcado:** hoje, 14/10, às 14h (ontem não deu).\n\n**Agora é fotos + vídeo da entrega:** o pessoal vai até a casa da Solange pra fazer a entrega e eu gravo o momento.\n\n**Ordem do dia:** chegar antes da equipe e fazer as fotos com a casa vazia e arrumada. Depois que a cliente entra, a casa não fica mais limpa pra foto.\n\n**Padrão de fotos:** 2 por cômodo, na ordem do checklist. Horizontal pra portfólio/site, vertical pro Instagram quando der.\n\n**Antes de começar:** luzes acesas, cortinas abertas, casa limpa, nada de obra à vista (balde, sacola, fita).\n\n**Checklist montado no padrão** (1 suíte, 2 quartos, 1 banheiro social, garagem). Se a casa for diferente, risca à mão no impresso.",
+    "checklist": [
+     {
+      "t": "Conferir luzes acesas, cortinas abertas e casa limpa",
+      "done": false
+     },
+     {
+      "t": "Tampas de vaso fechadas e armários fechados",
+      "done": false
+     },
+     {
+      "t": "Fachada frontal (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Fachada em ângulo / diagonal (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Entrada e portão (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Sala de estar (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Cozinha (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Suíte 1 (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Banheiro da suíte 1 (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Quarto 1 (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Quarto 2 (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Banheiro social (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Lavanderia / área de serviço (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Garagem (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Quintal / fundos (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Automação funcionando: luz pela Alexa ou app (2 fotos + vídeo)",
+      "done": false
+     },
+     {
+      "t": "Acabamentos: porcelanato, bancadas, esquadrias (2 fotos)",
+      "done": false
+     },
+     {
+      "t": "Vídeo geral: caminhada da entrada até os fundos (vertical)",
+      "done": false
+     },
+     {
+      "t": "VÍDEO ENTREGA · Chegar antes da equipe e fazer as fotos com a casa vazia",
+      "done": false
+     },
+     {
+      "t": "VÍDEO ENTREGA · Celular na vertical, estabilizado, bateria e espaço livre",
+      "done": false
+     },
+     {
+      "t": "VÍDEO ENTREGA · Confirmar com a Solange autorização de uso de imagem",
+      "done": false
+     },
+     {
+      "t": "VÍDEO ENTREGA · Chegada da cliente / equipe recebendo na porta",
+      "done": false
+     },
+     {
+      "t": "VÍDEO ENTREGA · Reação ao entrar na casa",
+      "done": false
+     },
+     {
+      "t": "VÍDEO ENTREGA · Equipe apresentando a casa e a automação",
+      "done": false
+     },
+     {
+      "t": "VÍDEO ENTREGA · Momento da entrega da chave (foto + vídeo)",
+      "done": false
+     },
+     {
+      "t": "VÍDEO ENTREGA · Foto da cliente com a equipe na fachada",
+      "done": false
+     },
+     {
+      "t": "VÍDEO ENTREGA · Depoimento curto da cliente (se ela topar)",
+      "done": false
+     },
+     {
+      "t": "Backup do material no mesmo dia",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
