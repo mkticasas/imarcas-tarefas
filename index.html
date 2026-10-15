@@ -1787,7 +1787,7 @@ function tkStartRealtime(){
 // Lê tasks.json do repositório e aplica operações ainda não aplicadas
 const TK_JSON_API='https://api.github.com/repos/mkticasas/imarcas-tarefas/contents/tasks.json';
 const TK_JSON_RAW='https://raw.githubusercontent.com/mkticasas/imarcas-tarefas/main/tasks.json';
-let tkEtag=localStorage.getItem('tk_etag')||'';
+let tkEtag=''; // começa vazio a cada carregamento: ops puladas por versão antiga do painel são reprocessadas
 let tkApiBlockUntil=Number(localStorage.getItem('tk_api_block')||0);
 let tkFonte='';
 function tkInfo(msg){const e=document.getElementById('tkSyncInfo');if(e)e.textContent=msg;}
@@ -1869,7 +1869,8 @@ async function tkSyncOps(){
         const areas=(cfg&&cfg.areas)||TK_AREAS.slice();
         if(!areas.some(function(a){return a.id===op.area.id||tkSlug(a.n)===tkSlug(op.area.n);})){
           areas.push(op.area);
-          await db.from('imarcas_task_config').upsert({id:1,areas:areas});
+          const {error:errA}=await db.from('imarcas_task_config').upsert({id:1,areas:areas});
+          if(errA)throw errA;
           TK_AREAS=areas;
         }
       }else if(op.type==='area_del'&&op.area_id){

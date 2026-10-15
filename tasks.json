@@ -2552,6 +2552,15 @@
         ]
       },
       "id": "op-0060"
+    },
+    {
+      "id": "op-0061",
+      "type": "area_add",
+      "area": {
+        "id": "lugner",
+        "n": "Lugner",
+        "c": "#E8792B"
+      }
     }
   ]
 }
