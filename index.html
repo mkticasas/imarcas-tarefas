@@ -286,6 +286,8 @@
   #tkDescPrev::-webkit-scrollbar-track{background:transparent;}
   #tkDescPrev::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px;}
   .tk-vinc{font-size:11px;color:var(--text3);opacity:.7;}
+  .tk-criado{font-size:10px;color:var(--text3);opacity:.7;white-space:nowrap;}
+  .modal-title .tk-criado{font-size:11px;margin-left:8px;font-weight:400;vertical-align:middle;}
   .tk-code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;letter-spacing:.5px;color:var(--text3);opacity:.55;cursor:pointer;transition:.15s;}
   .tk-code:hover{opacity:1;color:var(--accent);}
   .modal-title .tk-code{font-size:11px;margin-left:8px;vertical-align:middle;}
@@ -2283,6 +2285,16 @@ function tkSetFiltro(id){
   tkFiltroArea=(tkFiltroArea===id)?'':id;
   renderTasks();
 }
+function tkCriado(t){
+  if(!t||!t.criado)return '';
+  const d=new Date(t.criado);if(isNaN(d))return '';
+  const hoje=new Date();const p=n=>String(n).padStart(2,'0');
+  const curto=p(d.getDate())+'/'+p(d.getMonth()+1)+(d.getFullYear()!==hoje.getFullYear()?'/'+String(d.getFullYear()).slice(2):'');
+  const dias=Math.floor((new Date(hoje.toDateString())-new Date(d.toDateString()))/864e5);
+  const rel=dias<=0?'hoje':dias===1?'ontem':dias+' dias';
+  return {curto,rel,full:d.toLocaleString('pt-BR',{dateStyle:'short',timeStyle:'short'})};
+}
+function tkCriadoHtml(t){const c=tkCriado(t);return c?`<span class="tk-criado" title="Criado em ${c.full}">🕓 ${c.curto} · ${c.rel}</span>`:'';}
 function tkEsc(s){return String(s||'').replace(/</g,'&lt;');}
 function tkCardEl(t){
   const a=tkArea(t.area);
@@ -2308,6 +2320,7 @@ function tkCardEl(t){
       ${(t.comentarios&&t.comentarios.length)?`<span class="tk-cm-count">💬 ${t.comentarios.length}</span>`:''}
       ${tkExtractLinks(t.descricao).length?`<span class="tk-cm-count">🔗 ${tkExtractLinks(t.descricao).length}</span>`:''}
       ${t.prazo?`<span class="tk-prazo${late?' late':''}">${t.prazo.split('-').reverse().slice(0,2).join('/')}</span>`:''}
+      ${tkCriadoHtml(t)}
     </div>
     ${ck.length?`<div class="tk-prog"><div class="tk-prog-bar"><div class="tk-prog-fill" style="width:${pct}%;background:${pct===100?'var(--green)':'var(--accent)'}"></div></div><div class="tk-prog-txt">${done}/${ck.length} itens</div></div>`:''}
   </div>`;
@@ -2435,7 +2448,7 @@ function openTaskModal(id){
   tkEditing=id||null;
   tkFillSelects();
   const t=id?tkTasks.find(x=>x.id===id):null;
-  document.getElementById('taskModalTitle').innerHTML=t?('Editar tarefa'+(tkCode(t)?' <span class="tk-code" title="Código do card — clique pra copiar" onclick="tkCopyCode(\''+tkCode(t)+'\',event)">'+tkCode(t)+'</span>':'')):'Nova tarefa';
+  document.getElementById('taskModalTitle').innerHTML=t?('Editar tarefa'+(tkCode(t)?' <span class="tk-code" title="Código do card — clique pra copiar" onclick="tkCopyCode(\''+tkCode(t)+'\',event)">'+tkCode(t)+'</span>':'')+(tkCriado(t)?' <span class="tk-criado" title="Criado em '+tkCriado(t).full+'">criado em '+tkCriado(t).full+'</span>':'')):'Nova tarefa';
   document.getElementById('tk-titulo').value=t?t.titulo:'';
   const fd=document.getElementById('tk-desc');
   fd.value=t?(t.descricao||''):'';
