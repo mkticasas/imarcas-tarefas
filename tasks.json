@@ -1147,6 +1147,7 @@
    }
   },
   {
+   "id": "op-0027",
    "type": "update",
    "task": {
     "id": "t-pele-visita",
@@ -1286,10 +1287,10 @@
      }
     ],
     "descricao": "**Objetivo:** sair da Pelé com o que precisa pra escrever roteiros, bio, anúncio e formulário com a voz dele — e com os acessos que estão travando o #000088.\n\n**Duração:** 1h a 1h30 · **Onde:** Av. Alfredo Teodoro de Oliveira, 2594 (Jd. das Oliveiras) e, se der, uma obra em andamento logo depois.\n**Atenção:** a loja aparece fechada às segundas no Google.\n\n---\n\n**ROTEIRO DA VISITA**\n1. **Quebra-gelo (5 min):** pedir pra ele mostrar a empresa — fábrica, máquinas, estoque. Quem mostra o próprio espaço fala mais solto.\n2. **A história e o negócio (15 min):** deixar ele contar. É daqui que sai o vídeo de apresentação.\n3. **O cliente (15 min):** quem compra, por que escolhe a Pelé, o que trava a venda.\n4. **Processo (10 min):** do primeiro contato à entrega. Vira conteúdo de bastidor e resposta de destaque.\n5. **Mostrar o CRM (10 min):** abrir no celular dele, criar um lead de teste, mover no funil. Combinar quem vai usar.\n6. **Conteúdo e acessos (10 min):** obras pra gravar, se ele topa aparecer, acessos do Instagram e Meta.\n7. **Fechamento (5 min):** marcar o dia da captação e explicar o que acontece até lá.\n\n---\n\n**COMO CONDUZIR**\n- Gravar o áudio da conversa (pedir antes). As frases dele viram o texto dos vídeos.\n- Perguntar \"me conta de uma vez que…\" em vez de \"como funciona…\". História rende mais que explicação.\n- Anotar frases do jeito que ele fala, com as palavras dele.\n- Não vender nem prometer prazo de resultado. Hoje é só ouvir.\n\n**PERGUNTAS QUE MAIS RENDEM ROTEIRO**\n- \"Qual a obra que você mais tem orgulho? Por quê?\"\n- \"O que o cliente mais erra na hora de comprar esquadria?\"\n- \"Qual a pergunta que todo cliente faz?\"\n- \"Por que um cliente escolheu vocês e não outra empresa? Me conta um caso.\"\n- \"O que te irrita quando vê o trabalho de outra empresa?\"\n\n---\n\n**DEPOIS DA VISITA:** mandar o áudio aqui no chat. Eu transformo em roteiro do vídeo de apresentação, bio, perguntas do formulário e calendário do mês 1.\n\n**Material de apoio:** [concorrentes e diagnóstico](https://claude.ai/code/artifact/e21e69c9-ff87-4222-9f45-b7c2052f143d) · CRM: mkticasas.github.io/crm-pele-esquadrias\n\n---\n\n**FEITA em 13/10.** Resumo no card #000087. Ficou em aberto: acessos do Instagram/Meta, dia da captação e quem vai usar o CRM."
-   },
-   "id": "op-0027"
+   }
   },
   {
+   "id": "op-0028",
    "type": "update",
    "task": {
     "id": "t-cliente-pele-esquadrias",
@@ -1336,10 +1337,10 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0028"
+   }
   },
   {
+   "id": "op-0029",
    "type": "add",
    "task": {
     "id": "t-pele-monte-orcamento",
@@ -1397,10 +1398,10 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0029"
+   }
   },
   {
+   "id": "op-0030",
    "type": "add",
    "task": {
     "id": "t-pele-material",
@@ -1446,10 +1447,10 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0030"
+   }
   },
   {
+   "id": "op-0031",
    "type": "add",
    "task": {
     "id": "t-ideia-orcamento-esquadrias",
@@ -1478,18 +1479,18 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0031"
+   }
   },
   {
+   "id": "op-0032",
    "type": "update",
    "task": {
     "id": "t-pele-trafego",
     "descricao": "**Objetivo:** gerar orçamento de quem já tem projeto e obra andando — filtrar quem \"só quer saber o preço\" ou nem começou a obra.\n\n**Mudança do briefing (13/10):** a chamada do anúncio vira **\"Monte seu orçamento\"** e leva pro catálogo do #000098, em vez do formulário. O formulário abaixo fica como plano B até o catálogo ficar pronto.\n\n**Verba de anúncio:** separada da mensalidade (deixar por escrito).\n\n**FORMULÁRIO (perguntas da reunião)**\n1. Você é: arquiteto/engenheiro · dono da obra · construtora\n2. Já tem projeto com as medidas das esquadrias? sim · não\n3. Em que fase está a obra? estrutura/alvenaria · reboco/acabamento · ainda não começou\n4. Cidade/bairro da obra\n→ Nome e WhatsApp obrigatórios · e-mail opcional\n\n**Tratamento:** quem tem medida e obra andando = atendimento imediato. \"Ainda não começou\" = nutrição, não descartar (combinado na reunião).\n\n**Criativos:** usar o material da captação."
-   },
-   "id": "op-0032"
+   }
   },
   {
+   "id": "op-0033",
    "type": "add",
    "task": {
     "id": "t-pele-crm-mobile",
@@ -1535,20 +1536,20 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0033"
+   }
   },
   {
+   "id": "op-0034",
    "type": "update",
    "task": {
     "id": "t-pele-monte-orcamento",
     "titulo": "PELÉ · AUTO-ORÇAMENTO PELO LINK (FASE 2)",
     "descricao": "**Fase 2 de 3 do CRM da Pelé.** Link público que vai no anúncio patrocinado.\n\n**O que é:** página onde o cliente monta o próprio pedido de orçamento escolhendo pela foto. Mesma lógica do cardápio digital do Ditinho — só que sem preço.\n\n**Por que importa:** o anúncio deixa de ser \"solicite orçamento\" e vira \"monte seu orçamento\" — diferente de todos os concorrentes. E o Pelé recebe o pedido organizado, sem garimpar áudio e foto no WhatsApp.\n\n---\n\n**FLUXO DO CLIENTE**\n1. Escolhe a categoria: porta de entrada · porta de garagem · porta gourmet/de correr · janela da sala · janela de quarto · janela de banheiro · box · fachada de vidro\n2. Vê os modelos com foto (ex.: porta de entrada ripada, lisa, pivotante)\n3. Toca no modelo → digita **largura × altura** (aproximada) e a **quantidade**\n4. Item vai pra lista; repete pra cada item\n5. Atalho: **\"Kit casa de condomínio\"** já preenche os itens padrão — o cliente só ajusta as medidas\n6. Preenche nome, WhatsApp e cidade/bairro da obra → Enviar\n\n**O QUE ACONTECE AO ENVIAR**\n- Cai no **CRM da Pelé** como lead novo **+ pedido de orçamento** com os itens (status \"aguardando valores\"), pronto pra ele precificar na fase 3\n- Abre o **WhatsApp do Pelé** com a lista pronta (texto organizado)\n- O cliente fica com uma **cópia do que pediu** (tela/print) — segurança pros dois\n\n**REGRAS**\n- Sem preço na tela. Quem calcula é o Pelé.\n- Nº de folhas não é escolha do cliente.\n- Aviso na tela: \"Medida aproximada. A medição final é feita na obra.\"\n- Vidro (incolor, espelhado, pele de vidro) como opção onde fizer sentido.\n\n**MVP:** começar com 3 ou 4 categorias e poucos modelos, mostrar pro Pelé, depois completar.",
     "ordem": 4
-   },
-   "id": "op-0034"
+   }
   },
   {
+   "id": "op-0035",
    "type": "update",
    "task": {
     "id": "t-ideia-orcamento-esquadrias",
@@ -1601,10 +1602,10 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0035"
+   }
   },
   {
+   "id": "op-0036",
    "type": "update",
    "task": {
     "id": "t-pele-material",
@@ -1646,10 +1647,10 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0036"
+   }
   },
   {
+   "id": "op-0037",
    "type": "update",
    "task": {
     "id": "t-cliente-pele-esquadrias",
@@ -1704,10 +1705,10 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0037"
+   }
   },
   {
+   "id": "op-0038",
    "type": "update",
    "task": {
     "id": "t-pele-captacao",
@@ -1778,34 +1779,34 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0038"
+   }
   },
   {
+   "id": "op-0039",
    "type": "update",
    "task": {
     "id": "t-pele-conteudo",
     "descricao": "**Objetivo:** perfil vivo toda semana, com conteúdo que atraia arquiteto e quem já está com a obra andando (lead ideal definido na reunião).\n\n**LINHAS DE CONTEÚDO**\n- **Obra entregue:** antes/depois, ambiente pronto\n- **Bastidor:** montagem, fábrica, medição\n- **Dica técnica:** pra arquiteto e dono de obra (quando medir, como escolher a linha, manutenção)\n- **Prova social:** avaliação do Google, depoimento\n- **Chamada:** \"mande as medidas do seu projeto\"\n\n**Frequência:** conforme o combo fechado (definir no onboarding).\n\n**Insumos combinados em 13/10:** série de vídeo começo-meio-fim de uma obra (#000090) e fotos das casas prontas que o Lucas vai tirar → base das artes."
-   },
-   "id": "op-0039"
+   }
   },
   {
+   "id": "op-0040",
    "type": "update",
    "task": {
     "id": "t-pele-trafego",
     "descricao": "**Objetivo:** gerar orçamento de quem já tem projeto e obra andando — filtrar quem \"só quer saber o preço\" ou nem começou a obra.\n\n**Mudança do briefing (13/10):** a chamada do anúncio vira **\"Monte seu orçamento\"** e leva pro catálogo do #000098, em vez do formulário. O formulário abaixo fica como plano B até o catálogo ficar pronto.\n\n**Verba de anúncio:** separada da mensalidade (deixar por escrito).\n\n**FORMULÁRIO (perguntas da reunião)**\n1. Você é: arquiteto/engenheiro · dono da obra · construtora\n2. Já tem projeto com as medidas das esquadrias? sim · não\n3. Em que etapa está a sua obra? ainda não comecei · começando · em andamento · acabamento · obra pronta/reforma\n4. Cidade/bairro da obra\n→ Nome e WhatsApp obrigatórios · e-mail opcional\n\n**Tratamento:** quem tem medida e obra andando = atendimento imediato. \"Ainda não começou\" = nutrição, não descartar (combinado na reunião).\n\n**Criativos:** usar o material da captação.\n\n**Etapa da obra (pergunta padrão — usar no formulário do anúncio e no auto-orçamento):**\n\"Em que etapa está a sua obra?\"\n- Ainda não comecei (projeto / pré-obra)\n- Começando (fundação / estrutura)\n- Em andamento (alvenaria / reboco)\n- Acabamento (pronta pra esquadria)\n- Obra pronta / reforma (trocar esquadria)\n\nPor que: o cliente pode levar semanas até a obra estar pronta pra receber esquadria. A etapa diz a urgência e o tipo de acompanhamento."
-   },
-   "id": "op-0040"
+   }
   },
   {
+   "id": "op-0041",
    "type": "update",
    "task": {
     "id": "t-pele-monte-orcamento",
     "descricao": "**Fase 2 de 3 do CRM da Pelé.** Link público que vai no anúncio patrocinado.\n\n**O que é:** página onde o cliente monta o próprio pedido de orçamento escolhendo pela foto. Mesma lógica do cardápio digital do Ditinho — só que sem preço.\n\n**Por que importa:** o anúncio deixa de ser \"solicite orçamento\" e vira \"monte seu orçamento\" — diferente de todos os concorrentes. E o Pelé recebe o pedido organizado, sem garimpar áudio e foto no WhatsApp.\n\n---\n\n**FLUXO DO CLIENTE**\n1. Escolhe a categoria: porta de entrada · porta de garagem · porta gourmet/de correr · janela da sala · janela de quarto · janela de banheiro · box · fachada de vidro\n2. Vê os modelos com foto (ex.: porta de entrada ripada, lisa, pivotante)\n3. Toca no modelo → digita **largura × altura** (aproximada) e a **quantidade**\n4. Item vai pra lista; repete pra cada item\n5. Atalho: **\"Kit casa de condomínio\"** já preenche os itens padrão — o cliente só ajusta as medidas\n6. Preenche nome, WhatsApp, cidade/bairro e **etapa da obra** → Enviar\n\n**O QUE ACONTECE AO ENVIAR**\n- Cai no **CRM da Pelé** como lead novo **+ pedido de orçamento** com os itens (status \"aguardando valores\"), pronto pra ele precificar na fase 3\n- Abre o **WhatsApp do Pelé** com a lista pronta (texto organizado)\n- O cliente fica com uma **cópia do que pediu** (tela/print) — segurança pros dois\n\n**REGRAS**\n- Sem preço na tela. Quem calcula é o Pelé.\n- Nº de folhas não é escolha do cliente.\n- Aviso na tela: \"Medida aproximada. A medição final é feita na obra.\"\n- Vidro (incolor, espelhado, pele de vidro) como opção onde fizer sentido.\n\n**MVP:** começar com 3 ou 4 categorias e poucos modelos, mostrar pro Pelé, depois completar.\n\n**Etapa da obra (pergunta padrão — usar no formulário do anúncio e no auto-orçamento):**\n\"Em que etapa está a sua obra?\"\n- Ainda não comecei (projeto / pré-obra)\n- Começando (fundação / estrutura)\n- Em andamento (alvenaria / reboco)\n- Acabamento (pronta pra esquadria)\n- Obra pronta / reforma (trocar esquadria)\n\nPor que: o cliente pode levar semanas até a obra estar pronta pra receber esquadria. A etapa diz a urgência e o tipo de acompanhamento."
-   },
-   "id": "op-0041"
+   }
   },
   {
+   "id": "op-0042",
    "type": "update",
    "task": {
     "id": "t-ideia-orcamento-esquadrias",
@@ -1852,16 +1853,15 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0042"
+   }
   },
   {
+   "id": "op-0043",
    "type": "update",
    "task": {
     "id": "t-cliente-pele-esquadrias",
     "descricao": "**CLIENTE iMARCAS · Pelé Esquadrias de Alumínio**\n- **Endereço:** Av. Alfredo Teodoro de Oliveira, 2594, Sala 1 · Jardim das Oliveiras · São José do Rio Preto/SP\n- **Telefone/WhatsApp:** (17) 99241-6696\n- **Horário:** ter a sex 7h30–11h30 / 13h–18h · sáb 7h30–13h · fecha dom e seg (conferir a segunda)\n- **Google:** nota 5,0 com 22 avaliações. Elogios recorrentes: qualidade do material, montagem, prazo de entrega e opções de pagamento\n- **Presença digital:** não achei site nem Instagram indexado → levantar @ com ele\n\n---\n\n**O QUE FOI FECHADO NA REUNIÃO**\n- Combos apresentados: Bronze, Prata e Ouro (mensal)\n- Plano full + CRM de brinde (com o Cris, mesmo sistema que a iCasas usa)\n- Tráfego pago com formulário de qualificação (lead cai no CRM e já distribui pro vendedor)\n- Próximo passo combinado: criar grupo \"iMarcas · Pelé Esquadrias\" e agendar dia de captação numa obra boa\n\n**DORES QUE ELE TROUXE**\n- Não tem CRM — controla orçamento de cabeça/agenda\n- Usa Conta Azul só pra montar orçamento; acha ruim\n- Perde tempo com lead que só quer preço ou nem começou a obra\n\n**LEAD IDEAL (base pras perguntas do formulário)**\n- Arquiteto ou cliente final com projeto e medidas definidas\n- Obra em andamento ou pra começar em breve\n- Quem ainda nem começou a obra: não descartar, só não é a hora — atendimento diferente (nutrição), ciclo longo\n\n**PERGUNTAS DO FORMULÁRIO (rascunho)**\n1. Você é: arquiteto/engenheiro · dono da obra · construtora\n2. Já tem projeto com as medidas das esquadrias? sim · não\n3. Em que fase está a obra? estrutura/alvenaria · reboco/acabamento · ainda não começou\n4. Região da obra (cidade/bairro)\n→ Nome + WhatsApp obrigatório · e-mail opcional\n\n---\n\n**BRIEFING 13/10 — O QUE MUDOU**\n- **Ideia central:** em vez de \"solicite orçamento\", o cliente **monta o próprio orçamento** num catálogo com fotos: escolhe o item (porta de entrada, garagem, janela…), o modelo, digita largura × altura e a quantidade. Sem preço na tela. Chega pronto no CRM e no WhatsApp do Pelé → card #000098.\n- **Orçamento inicial não precisa de visita:** medida aproximada basta (variação de até 10 cm é aceitável); a medição final ajusta depois.\n- **Casas de condomínio são quase iguais:** fachada de vidro, porta de garagem de lambril, porta de entrada ripada, porta gourmet 5 folhas (~5 × 2,5 m), janela da sala, box. Muda a fachada (vidro incolor, espelhado, pele de vidro). Dá pra ter um \"kit casa padrão\".\n- **Quem define nº de folhas é o Pelé**, não o cliente — o cliente só manda a medida.\n- **Aproveitamento de material:** tirar item muda o preço, porque sobra mais alumínio e o Pelé repassa esse custo. O cliente não entende e acha que é enganação; concorrentes não mudam o preço porque reaproveitam a sucata em outra obra. O orçamento precisa **explicar** a diferença → #000100.\n- **Pensamento de preço dele:** sobra de alumínio é lucro e tem que ser repassada; margem de referência ~30%. Não dá desconto por item avulso.\n- **Ele quer contratar alguém só pra fazer orçamento** — o sistema precisa ser simples pra uma pessoa nova.\n- **Material:** tem muitas fotos e vídeos (portas, box, produção, fachadas) e um catálogo feito pela esposa.\n\n**CRM DA PELÉ — 3 FASES (combinado em 13/10)**\n1. **CRM no celular** — base de tudo, começa já → #000101\n2. **Auto-orçamento pelo link** (anúncio) — cliente monta o pedido sem preço, cai no CRM → #000098\n3. **Orçamento no CRM** — Pelé precifica, gera PDF e manda → #000100\n\n**CARDS DESTE CLIENTE** (cada um marca o item aqui quando concluir)\n#000088 Onboarding e pagamento · #000089 Diagnóstico · #000090 Captação · #000091 Perfil · #000092 Calendário · #000093 Tráfego · #000094 CRM · #000095 Visita · #000098 Monte seu orçamento · #000099 Material do Pelé\n\n**RISCOS / PONTOS DE ATENÇÃO**\n- Diferença Ouro x Prata é pequena e o Ouro ainda leva CRM de graça → definir o que o CRM inclui e por quanto tempo é brinde\n- Verba de tráfego é separada da mensalidade → deixar escrito\n- Se ninguém alimentar o CRM do lado dele, o brinde não gera resultado"
-   },
-   "id": "op-0043"
+   }
   },
   {
    "id": "op-0044",
@@ -2407,15 +2407,16 @@
    }
   },
   {
+   "id": "op-0057",
    "type": "area_add",
    "area": {
     "id": "lugner",
     "n": "Lugner",
     "c": "#E8792B"
-   },
-   "id": "op-0057"
+   }
   },
   {
+   "id": "op-0058",
    "type": "update",
    "task": {
     "id": "t-lugner-perfil-videos",
@@ -2452,10 +2453,10 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0058"
+   }
   },
   {
+   "id": "op-0059",
    "type": "add",
    "task": {
     "id": "t-lugner-video-apresentacao",
@@ -2505,10 +2506,10 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0059"
+   }
   },
   {
+   "id": "op-0060",
    "type": "add",
    "task": {
     "id": "t-lugner-diario-obra",
@@ -2550,8 +2551,7 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0060"
+   }
   },
   {
    "id": "op-0061",
@@ -2563,14 +2563,15 @@
    }
   },
   {
+   "id": "op-0062",
    "type": "area_upd",
    "area_id": "lugner",
    "campos": {
     "icon": "assets/areas/lugner.png"
-   },
-   "id": "op-0062"
+   }
   },
   {
+   "id": "op-0063",
    "type": "update",
    "task": {
     "id": "t-lugner-perfil-videos",
@@ -2601,10 +2602,10 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0063"
+   }
   },
   {
+   "id": "op-0064",
    "type": "update",
    "task": {
     "id": "t-lugner-video-apresentacao",
@@ -2643,10 +2644,10 @@
       "done": false
      }
     ]
-   },
-   "id": "op-0064"
+   }
   },
   {
+   "id": "op-0065",
    "type": "add",
    "task": {
     "id": "t-lugner-encontro-1510",
@@ -2676,6 +2677,7 @@
    }
   },
   {
+   "id": "op-0066",
    "type": "add",
    "task": {
     "id": "t-loja-107",
@@ -2712,6 +2714,7 @@
    }
   },
   {
+   "id": "op-0067",
    "type": "add",
    "task": {
     "id": "t-loja-108",
@@ -2752,6 +2755,7 @@
    }
   },
   {
+   "id": "op-0068",
    "type": "add",
    "task": {
     "id": "t-loja-109",
@@ -2784,6 +2788,7 @@
    }
   },
   {
+   "id": "op-0069",
    "type": "add",
    "task": {
     "id": "t-loja-110",
@@ -2817,6 +2822,7 @@
    }
   },
   {
+   "id": "op-0070",
    "type": "add",
    "task": {
     "id": "t-loja-111",
@@ -2853,6 +2859,7 @@
    }
   },
   {
+   "id": "op-0071",
    "type": "add",
    "task": {
     "id": "t-loja-112",
@@ -2885,6 +2892,7 @@
    }
   },
   {
+   "id": "op-0072",
    "type": "add",
    "task": {
     "id": "t-loja-113",
@@ -2921,6 +2929,7 @@
    }
   },
   {
+   "id": "op-0073",
    "type": "add",
    "task": {
     "id": "t-loja-114",
@@ -2961,6 +2970,7 @@
    }
   },
   {
+   "id": "op-0074",
    "type": "add",
    "task": {
     "id": "t-loja-115",
@@ -3001,6 +3011,7 @@
    }
   },
   {
+   "id": "op-0075",
    "type": "add",
    "task": {
     "id": "t-loja-116",
@@ -3029,6 +3040,7 @@
    }
   },
   {
+   "id": "op-0076",
    "type": "add",
    "task": {
     "id": "t-loja-117",
@@ -3057,6 +3069,7 @@
    }
   },
   {
+   "id": "op-0077",
    "type": "add",
    "task": {
     "id": "t-inst-118",
@@ -3105,6 +3118,7 @@
    }
   },
   {
+   "id": "op-0078",
    "type": "add",
    "task": {
     "id": "t-inst-119",
@@ -3149,6 +3163,7 @@
    }
   },
   {
+   "id": "op-0079",
    "type": "update",
    "task": {
     "id": "t-loja-116",
