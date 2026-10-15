@@ -1864,6 +1864,14 @@ async function tkSyncOps(){
           await db.from('imarcas_task_config').upsert({id:1,colunas:restantes});
           TK_COLS=restantes;
         }
+      }else if(op.type==='area_add'&&op.area&&op.area.id){
+        const {data:cfg}=await db.from('imarcas_task_config').select('areas').eq('id',1).maybeSingle();
+        const areas=(cfg&&cfg.areas)||TK_AREAS.slice();
+        if(!areas.some(function(a){return a.id===op.area.id||tkSlug(a.n)===tkSlug(op.area.n);})){
+          areas.push(op.area);
+          await db.from('imarcas_task_config').upsert({id:1,areas:areas});
+          TK_AREAS=areas;
+        }
       }else if(op.type==='area_del'&&op.area_id){
         const {data:cfg}=await db.from('imarcas_task_config').select('areas').eq('id',1).maybeSingle();
         const areas=(cfg&&cfg.areas)||TK_AREAS.slice();
