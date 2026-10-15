@@ -2674,6 +2674,387 @@
      }
     ]
    }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-loja-107",
+    "codigo": 107,
+    "titulo": "ADESIVO PORTA DE ENTRADA · FUNÇÕES DA FECHADURA",
+    "coluna": "todo",
+    "area": "iCasas Automação",
+    "prioridade": "alta",
+    "ordem": 107,
+    "dia": "2026-10-15",
+    "descricao": "Na porta de entrada (a da fechadura preta), aplicar as **funções da fechadura** de forma bonita e legível — o cliente entende a automação já na chegada.\n\n## Conteúdo\n- Leitura facial\n- Digital\n- Senha\n- Capacidade de usuários (facial / digital)\n- Formas de abertura (app, remota, etc.)\n\n## Decidir\n- Adesivo em vinil ou pintura direto na porta.\n\n⚠️ Confirmar o modelo exato da fechadura para puxar os números corretos (nº de usuários).\n\n_Origem: reunião de reorganização da loja (15/10)._",
+    "checklist": [
+     {
+      "t": "Levantar modelo e especificações da fechadura",
+      "done": false
+     },
+     {
+      "t": "Escrever o texto das funções",
+      "done": false
+     },
+     {
+      "t": "Criar arte do adesivo",
+      "done": false
+     },
+     {
+      "t": "Definir vinil x pintura",
+      "done": false
+     },
+     {
+      "t": "Orçar e aplicar",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-loja-108",
+    "codigo": 108,
+    "titulo": "TELA LED INFORMATIVA · PAREDE DA LOJA",
+    "coluna": "todo",
+    "area": "iCasas Automação",
+    "prioridade": "alta",
+    "ordem": 108,
+    "dia": "2026-10-15",
+    "descricao": "⚠️ PRECISO DE VOCÊ: medir a parede e definir o tamanho da tela (polegadas / painel P1.8).\n\nTela de LED na parede (hoje azul → vai virar **prata ou cinza**). Objetivo: quem para na frente entende em segundos o que a iCasas Automação faz.\n\n## Direção visual\n- Empresa de tecnologia → estética de **código** (tipografia monoespaçada, linhas de terminal).\n- Mensagens curtas, ciclo rápido.\n\n## Próximo passo\nFazer um croqui da parede com as medidas e calcular a polegada que cabe.\n\n_Origem: reunião de reorganização da loja (15/10)._",
+    "checklist": [
+     {
+      "t": "Medir a parede e fazer croqui com medidas",
+      "done": false
+     },
+     {
+      "t": "Definir polegadas / modelo do painel (P1.8?)",
+      "done": false
+     },
+     {
+      "t": "Escolher cor da parede: prata ou cinza",
+      "done": false
+     },
+     {
+      "t": "Roteiro do conteúdo (o que é, funções, CTA)",
+      "done": false
+     },
+     {
+      "t": "Criar animações em estilo código",
+      "done": false
+     },
+     {
+      "t": "Instalar e testar",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-loja-109",
+    "codigo": 109,
+    "titulo": "FACHADA · ILUMINAÇÃO + LUZES DE NATAL",
+    "coluna": "todo",
+    "area": "iCasas Automação",
+    "prioridade": "media",
+    "ordem": 109,
+    "dia": "2026-10-15",
+    "descricao": "Trocar a iluminação da fachada (pontos em cada canto) e já aproveitar para colocar as **luzes de Natal**.\n\n_Origem: reunião de reorganização da loja (15/10)._",
+    "checklist": [
+     {
+      "t": "Listar o que comprar (iluminação + luzes de Natal)",
+      "done": false
+     },
+     {
+      "t": "Comprar material",
+      "done": false
+     },
+     {
+      "t": "Instalar iluminação nova",
+      "done": false
+     },
+     {
+      "t": "Instalar luzes de Natal",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-loja-110",
+    "codigo": 110,
+    "titulo": "SOM DA LOJA · WILSON (FIM DE SEMANA)",
+    "coluna": "todo",
+    "area": "iCasas Automação",
+    "prioridade": "media",
+    "ordem": 110,
+    "dia": "2026-10-15",
+    "descricao": "Wilson monta o som da loja no fim de semana. Se sobrar tempo, já faz também o som da **zona 2**.\n\n_Origem: reunião de reorganização da loja (15/10)._",
+    "checklist": [
+     {
+      "t": "Confirmar com o Wilson o dia",
+      "done": false
+     },
+     {
+      "t": "Montar som da zona 1",
+      "done": false
+     },
+     {
+      "t": "Montar som da zona 2",
+      "done": false
+     },
+     {
+      "t": "Testar",
+      "done": false
+     }
+    ],
+    "prazo": "2026-10-18"
+   }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-loja-111",
+    "codigo": 111,
+    "titulo": "PAREDE · PAPEL DE PAREDE + QUADRO DE METAS",
+    "coluna": "todo",
+    "area": "iCasas Construtora",
+    "prioridade": "media",
+    "ordem": 111,
+    "dia": "2026-10-15",
+    "descricao": "Arrancar o revestimento atual da parede, aplicar o papel de parede que já temos e montar o **quadro de metas da construtora**.\n\n_Origem: reunião de reorganização da loja (15/10)._",
+    "checklist": [
+     {
+      "t": "Remover revestimento atual",
+      "done": false
+     },
+     {
+      "t": "Aplicar papel de parede",
+      "done": false
+     },
+     {
+      "t": "Definir indicadores do quadro de metas",
+      "done": false
+     },
+     {
+      "t": "Criar arte do quadro",
+      "done": false
+     },
+     {
+      "t": "Instalar o quadro",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-loja-112",
+    "codigo": 112,
+    "titulo": "BANHEIROS · UNISSEX CLIENTE + PCD/FUNCIONÁRIOS",
+    "coluna": "todo",
+    "area": "iCasas Construtora",
+    "prioridade": "alta",
+    "ordem": 112,
+    "dia": "2026-10-15",
+    "descricao": "Reorganizar os banheiros:\n- **Banheiro 1 (hoje feminino)** → unissex, **só para clientes**.\n- **Banheiro 2** → acessível (porta para cadeirante) e uso dos **funcionários**.\n\nRafael vai passar para ver.\n\n_Origem: reunião de reorganização da loja (15/10)._",
+    "checklist": [
+     {
+      "t": "Visita do Rafael",
+      "done": false
+     },
+     {
+      "t": "Adaptar porta para cadeirante",
+      "done": false
+     },
+     {
+      "t": "Placas: Unissex / Clientes e PCD / Funcionários",
+      "done": false
+     },
+     {
+      "t": "Ajustar acabamento",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-loja-113",
+    "codigo": 113,
+    "titulo": "SALAS DE BAIXO · CARPETE",
+    "coluna": "todo",
+    "area": "iCasas Construtora",
+    "prioridade": "media",
+    "ordem": 113,
+    "dia": "2026-10-15",
+    "descricao": "Nas duas salas de baixo: tirar o tapete e colocar **carpete no chão inteiro**. Tirar a mesinha de centro e tentar vender a poltrona.\n\n_Origem: reunião de reorganização da loja (15/10)._",
+    "checklist": [
+     {
+      "t": "Medir as duas salas",
+      "done": false
+     },
+     {
+      "t": "Orçar carpete",
+      "done": false
+     },
+     {
+      "t": "Tirar tapete e mesinha de centro",
+      "done": false
+     },
+     {
+      "t": "Anunciar/vender a poltrona",
+      "done": false
+     },
+     {
+      "t": "Instalar carpete",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-loja-114",
+    "codigo": 114,
+    "titulo": "ESTOQUE · MUDAR PARA O BARRACÃO",
+    "coluna": "todo",
+    "area": "iCasas Construtora",
+    "prioridade": "media",
+    "ordem": 114,
+    "dia": "2026-10-15",
+    "descricao": "Quando o barracão ficar pronto, o estoque **sai da loja** e vai para uma sala de estoque lá. Fechar o espaço embaixo da escada.\n\n**Responsável pela entrada/saída:** Vitinho.\nControle do barracão: adesivar depois.\n\n_Origem: reunião de reorganização da loja (15/10)._",
+    "checklist": [
+     {
+      "t": "Finalizar o barracão",
+      "done": false
+     },
+     {
+      "t": "Montar sala de estoque",
+      "done": false
+     },
+     {
+      "t": "Fechar embaixo da escada",
+      "done": false
+     },
+     {
+      "t": "Mudar o estoque",
+      "done": false
+     },
+     {
+      "t": "Definir controle de entrada/saída com o Vitinho",
+      "done": false
+     },
+     {
+      "t": "Adesivo de controle no barracão",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-loja-115",
+    "codigo": 115,
+    "titulo": "LAYOUT DA LOJA · SÓ VENDA, FINANCEIRO E MKT",
+    "coluna": "todo",
+    "area": "iCasas Construtora",
+    "prioridade": "media",
+    "ordem": 115,
+    "dia": "2026-10-15",
+    "descricao": "⚠️ PRECISO DE VOCÊ: decidir se a cozinha vai para baixo da escada e se vale abrir mais uma sala no fundo.\n\nPremissa: a loja é **só venda, financeiro e marketing**. O resto (estoque, operação) sai.\n- Sala de cima: **reuniões com clientes da construtora**.\n- Mesas atuais vão para o barracão; no lugar, uma **bancada** para 4 pessoas trabalharem.\n- Impressoras: manter as duas.\n\n_Origem: reunião de reorganização da loja (15/10)._",
+    "checklist": [
+     {
+      "t": "Decidir cozinha embaixo da escada",
+      "done": false
+     },
+     {
+      "t": "Decidir sala extra no fundo",
+      "done": false
+     },
+     {
+      "t": "Mandar fazer bancada para 4 pessoas",
+      "done": false
+     },
+     {
+      "t": "Levar mesas atuais para o barracão",
+      "done": false
+     },
+     {
+      "t": "Definir lugar das 2 impressoras",
+      "done": false
+     },
+     {
+      "t": "Preparar sala de reunião (andar de cima)",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-loja-116",
+    "codigo": 116,
+    "titulo": "CORREDOR · HISTÓRIA DA ICASAS",
+    "coluna": "ideias",
+    "area": "iCasas Construtora",
+    "prioridade": "baixa",
+    "ordem": 116,
+    "dia": "2026-10-15",
+    "descricao": "Ideia: contar a história da iCasas no corredor.\n\nPonto de atenção levantado na conversa: o fluxo de pessoas no corredor pode ser baixo — avaliar se não rende mais em um ponto onde o cliente para (recepção ou sala de reunião).\n\n_Origem: reunião de reorganização da loja (15/10)._",
+    "checklist": [
+     {
+      "t": "Levantar a história completa com os sócios",
+      "done": false
+     },
+     {
+      "t": "Decidir local (corredor x recepção)",
+      "done": false
+     },
+     {
+      "t": "Criar linha do tempo visual",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-loja-117",
+    "codigo": 117,
+    "titulo": "PENDÊNCIAS SOLTAS DA REUNIÃO",
+    "coluna": "waiting",
+    "area": "iCasas Construtora",
+    "prioridade": "baixa",
+    "ordem": 117,
+    "dia": "2026-10-15",
+    "descricao": "Itens citados sem definição clara — confirmar o que é e quem faz:\n- Classificadora: **180 na fábrica**, pode pedir.\n- Conversa sobre **aluguel de carro**: fechou, mas falta definir o próximo passo.\n- Compras pendentes (\"comprar um cacão\" — confirmar o que é).\n\n_Origem: reunião de reorganização da loja (15/10)._",
+    "checklist": [
+     {
+      "t": "Pedir a classificadora (180 na fábrica)",
+      "done": false
+     },
+     {
+      "t": "Definir próximo passo do aluguel de carro",
+      "done": false
+     },
+     {
+      "t": "Confirmar compra pendente",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
