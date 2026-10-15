@@ -1743,7 +1743,9 @@ function tkIc(a,grande){
   return u?'<img class="tk-area-ic'+(grande?' lg':'')+'" src="'+u+'" alt="">':'';
 }
 async function tkAssinarIcones(){
-  const ps=TK_AREAS.map(function(a){return a.icon;}).filter(Boolean);
+  // ícone hospedado no próprio repositório (assets/...) ou URL completa: usa direto, sem assinar
+  TK_AREAS.forEach(function(a){if(a.icon&&/^(assets\/|https?:)/.test(a.icon))tkUrlCache[a.icon]=a.icon;});
+  const ps=TK_AREAS.map(function(a){return a.icon;}).filter(function(p){return p&&!tkUrlCache[p];});
   if(ps.length)await tkAssinar(ps);
 }
 
@@ -1873,6 +1875,18 @@ async function tkSyncOps(){
           if(errA)throw errA;
           TK_AREAS=areas;
         }
+      }else if(op.type==='area_upd'&&op.area_id&&op.campos){
+        const {data:cfg}=await db.from('imarcas_task_config').select('areas').eq('id',1).maybeSingle();
+        const areas=(cfg&&cfg.areas)||TK_AREAS.slice();
+        let achou=false;
+        const novas=areas.map(function(a){
+          if(a.id===op.area_id||tkSlug(a.n)===tkSlug(op.area_id)){achou=true;return Object.assign({},a,op.campos);}
+          return a;
+        });
+        if(!achou)throw new Error('área não encontrada: '+op.area_id);
+        const {error:errU}=await db.from('imarcas_task_config').upsert({id:1,areas:novas});
+        if(errU)throw errU;
+        TK_AREAS=novas;await tkAssinarIcones();
       }else if(op.type==='area_del'&&op.area_id){
         const {data:cfg}=await db.from('imarcas_task_config').select('areas').eq('id',1).maybeSingle();
         const areas=(cfg&&cfg.areas)||TK_AREAS.slice();

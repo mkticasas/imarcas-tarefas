@@ -2561,6 +2561,90 @@
         "n": "Lugner",
         "c": "#E8792B"
       }
+    },
+    {
+      "type": "area_upd",
+      "area_id": "lugner",
+      "campos": {
+        "icon": "assets/areas/lugner.png"
+      },
+      "id": "op-0062"
+    },
+    {
+      "type": "update",
+      "task": {
+        "id": "t-lugner-perfil-videos",
+        "descricao": "Marca pessoal, **sem logo**. Vídeos ficam em cards separados nesta área.\n\n**Nome:** `Lugner · Engenheiro Civil` (ou `... Rio Preto` pra puxar busca local)\n\n**Bio**\n```\nLugner · Engenheiro Civil\nSócio do Grupo iCasas\nProjeto, execução e entrega. Você acompanha do início à chave.\n📍 Rio Preto e região\n```\n\n**Foto:** rosto, peito pra cima, fundo neutro/desfocado, boa luz. Sem obra de longe, sem logo. Dá pra tirar no mesmo dia da gravação do vídeo de apresentação.\n\n**Destaques:** COMEÇA AQUI · OBRAS · ANTES / DEPOIS · ENTREGA · COMO FUNCIONA · DEPOIMENTOS\nCapas iguais: fundo grafite `#1C1C1C`, palavra branca centralizada, mesma fonte, 1080×1920.\n\n**Contato:** botão de WhatsApp ativo + links (site iCasas e WhatsApp).\n\n**Ordem:** Perfil Profissional → nome e bio → foto e WhatsApp → destaques.",
+        "checklist": [
+          {
+            "t": "Conta como Perfil Profissional",
+            "done": false
+          },
+          {
+            "t": "Trocar nome e bio",
+            "done": false
+          },
+          {
+            "t": "Foto de perfil nova",
+            "done": false
+          },
+          {
+            "t": "Ativar botão de WhatsApp + links",
+            "done": false
+          },
+          {
+            "t": "Criar capas dos 6 destaques",
+            "done": false
+          },
+          {
+            "t": "Organizar conteúdo antigo nos destaques",
+            "done": false
+          }
+        ]
+      },
+      "id": "op-0063"
+    },
+    {
+      "type": "update",
+      "task": {
+        "id": "t-lugner-video-apresentacao",
+        "descricao": "*Vertical · 50–55s · uma tomada · vai no **fixado 2** e no destaque **COMEÇA AQUI***\n\n## Roteiro\n\n**0–7s · Gancho**\n\"A maior parte das pessoas que tem terreno não constrói por um motivo só: não sabe por onde começar.\"\n\n**7–14s · Quem fala**\n\"Eu sou o Lugner, engenheiro civil e sócio do Grupo iCasas. E é exatamente isso que a gente resolve.\"\n\n**14–26s · Antes da obra**\n\"Começa antes da obra. A gente senta com você, olha o seu terreno, olha o seu orçamento, e descobre o que dá pra fazer ali dentro. Aí monta o projeto, e você aprova tudo antes de qualquer coisa começar.\"\n\n**26–38s · Durante**\n\"Aprovado o projeto, a obra anda. E você acompanha cada etapa pelo celular: fundação, estrutura, acabamento. Sem precisar ligar pra ninguém perguntando como está.\"\n\n**38–48s · Entrega** *(automação é padrão em todas as casas)*\n\"E na entrega, a casa também já responde pelo celular. Iluminação, portão e câmera na fachada saem funcionando no dia que você recebe a chave, porque a automação entra durante a obra, não depois.\"\n\n**48–55s · Chamada**\n\"Se você tem um terreno parado, o primeiro passo é uma conversa. Chama a gente aqui. É de graça e você já sai sabendo o que dá pra fazer.\"\n\n**Não cortar:** \"é exatamente isso que a gente resolve\" e \"começa antes da obra\". São as costuras entre os blocos.\n\n## Onde gravar\n1. **Obra em estrutura** (laje e pilares aparentes) — melhor opção. Ele de frente, obra desfocada atrás, plano médio.\n2. **Casa recém-entregue** (fachada ou sala) — reforça o bloco \"Entrega\". Se der, ele aciona luz ou portão pelo celular no final.\n3. **Terreno vazio de cliente** — só como abertura ou b-roll; fraco como cenário único.\n4. **Plano B (chuva/sem obra):** galpão do grupo ou mesa com projeto impresso aberto. Evitar escritório de parede branca.\n\n## B-roll\n- Ele andando pela obra, conferindo prumo/medida, conversando com o mestre de obras.\n- Tela do sistema de acompanhamento no celular (etapas e fotos).\n- Mão abrindo projeto na mesa.\n- Portão ou luz acionados pelo celular numa casa entregue.\n\n## Produção\n- **Horário:** 7h–9h ou depois das 16h. Luz suave, obra mais silenciosa.\n- Celular vertical, altura dos olhos, tripé. Plano médio, peito pra cima.\n- **Áudio:** lapela; sem ela, canto sem vento e celular a até 1,5 m. Sem betoneira/serra rodando.\n- **Legenda queimada** obrigatória.\n- **Se ele travar:** grava 0–26s olhando pra câmera e o resto em voz sobreposta ao b-roll.\n- Aproveitar o dia e tirar a **foto de perfil**.",
+        "checklist": [
+          {
+            "t": "Escolher local e horário",
+            "done": false
+          },
+          {
+            "t": "Mandar roteiro pro Lugner ensaiar",
+            "done": false
+          },
+          {
+            "t": "Gravar vídeo (uma tomada)",
+            "done": false
+          },
+          {
+            "t": "Gravar b-roll",
+            "done": false
+          },
+          {
+            "t": "Tirar foto de perfil no mesmo dia",
+            "done": false
+          },
+          {
+            "t": "Editar com legenda",
+            "done": false
+          },
+          {
+            "t": "Publicar e fixar como fixado 2",
+            "done": false
+          },
+          {
+            "t": "Adicionar no destaque COMEÇA AQUI",
+            "done": false
+          }
+        ]
+      },
+      "id": "op-0064"
     }
   ]
 }
