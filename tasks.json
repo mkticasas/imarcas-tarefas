@@ -3055,6 +3055,126 @@
      }
     ]
    }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-inst-118",
+    "codigo": 118,
+    "titulo": "VÍDEO INSTITUCIONAL · HISTÓRIA DO GRUPO ICASAS",
+    "coluna": "todo",
+    "area": "iCasas Construtora",
+    "prioridade": "alta",
+    "ordem": 118,
+    "dia": "2026-10-15",
+    "descricao": "Contar a história do grupo: **do começo até hoje**, com números. Posicionamento: a iCasas é um **grupo** (construtora + automação + tecnologia), não mais uma empresinha.\n\nGatilho: o Gilson comentou que todo mundo que fala de automação na região já conhece o Lucas e o Cris — e que isso precisa ser mostrado.\n\n## Estrutura do roteiro\n1. **Começo:** como nasceu, quem são os sócios, primeira casa.\n2. **Virada:** quando a automação virou padrão nas casas.\n3. **Números:** casas entregues, bairro entregue, casas automatizadas (ver card de números).\n4. **Hoje:** grupo — construtora, automação, tecnologia, equipe nova.\n5. **Fechamento:** para onde vamos + CTA.\n\n## Estratégia de produção\nGravar **uma entrevista longa com os sócios** e desdobrar: vídeo institucional, cortes para Reels, linha do tempo do corredor (#116) e conteúdo da tela LED (#108).",
+    "checklist": [
+     {
+      "t": "Fechar números com os sócios (card de números)",
+      "done": false
+     },
+     {
+      "t": "Separar referências de vídeo institucional",
+      "done": false
+     },
+     {
+      "t": "Escrever roteiro / perguntas da entrevista",
+      "done": false
+     },
+     {
+      "t": "Montar o cenário de gravação",
+      "done": false
+     },
+     {
+      "t": "Gravar entrevista com os sócios",
+      "done": false
+     },
+     {
+      "t": "Gravar imagens de apoio (obras, casas entregues, automação)",
+      "done": false
+     },
+     {
+      "t": "Editar versão institucional",
+      "done": false
+     },
+     {
+      "t": "Cortes para Reels",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "type": "add",
+   "task": {
+    "id": "t-inst-119",
+    "codigo": 119,
+    "titulo": "NÚMEROS DO GRUPO ICASAS · LEVANTAR E CONFIRMAR",
+    "coluna": "waiting",
+    "area": "iCasas Construtora",
+    "prioridade": "alta",
+    "ordem": 119,
+    "dia": "2026-10-15",
+    "descricao": "⚠️ PRECISO DE VOCÊ: os números precisam vir confirmados pelos sócios antes de aparecer em vídeo, site ou parede. Número errado em material institucional tira credibilidade.\n\n## Levantar\n- Casas entregues (falado: **mais de 150** — confirmar)\n- Bairro entregue inteiro (confirmar nome)\n- Casas automatizadas (ninguém soube dizer — levantar)\n- Anos de empresa / ano de fundação\n- Tamanho da equipe hoje\n- Obras em andamento\n\nEsses números alimentam o vídeo institucional, o corredor da história (#116), a tela LED (#108) e o site.",
+    "checklist": [
+     {
+      "t": "Casas entregues",
+      "done": false
+     },
+     {
+      "t": "Bairro entregue (nome)",
+      "done": false
+     },
+     {
+      "t": "Casas automatizadas",
+      "done": false
+     },
+     {
+      "t": "Ano de fundação",
+      "done": false
+     },
+     {
+      "t": "Equipe atual",
+      "done": false
+     },
+     {
+      "t": "Obras em andamento",
+      "done": false
+     },
+     {
+      "t": "Validar com Cris e Lugner",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "type": "update",
+   "task": {
+    "id": "t-loja-116",
+    "codigo": 116,
+    "titulo": "CORREDOR · HISTÓRIA DA ICASAS",
+    "coluna": "todo",
+    "area": "iCasas Construtora",
+    "prioridade": "media",
+    "ordem": 116,
+    "dia": "2026-10-15",
+    "descricao": "Ideia: contar a história da iCasas no corredor.\n\nPonto de atenção levantado na conversa: o fluxo de pessoas no corredor pode ser baixo — avaliar se não rende mais em um ponto onde o cliente para (recepção ou sala de reunião).\n\n_Origem: reunião de reorganização da loja (15/10)._\n\n**Atualização 15/10:** usar o mesmo material do vídeo institucional (#118) e os números do grupo (#119) — a linha do tempo sai da entrevista com os sócios.",
+    "checklist": [
+     {
+      "t": "Levantar a história completa com os sócios",
+      "done": false
+     },
+     {
+      "t": "Decidir local (corredor x recepção)",
+      "done": false
+     },
+     {
+      "t": "Criar linha do tempo visual",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
