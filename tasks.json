@@ -3239,6 +3239,53 @@
      }
     ]
    }
+  },
+  {
+   "id": "op-1017-upd-120",
+   "type": "update",
+   "task": {
+    "id": "t-inst-120",
+    "titulo": "TOTEM BACKLIGHT · FACHADA DA LOJA",
+    "descricao": "Totem grande na frente da loja com **lona backlight (retroiluminada)** pra parar quem passa e apresentar a marca iCasas Automação.\n\n## Conceito: \"a casa que acende\"\nFundo escuro com uma casa à noite; só as janelas, a frase e a logo ficam claras. Com a luz por trás, **só essas partes brilham** — parece que a casa está acesa de verdade.\nVariação premium: impressão **dia/noite** (imagem extra no verso da lona) — de dia a casa aparece apagada, à noite as janelas acendem. Confirmar se a gráfica faz e o custo.\n\n## Copy (máx. 6 palavras)\n- **Fala que ela faz.**\n- Sua casa obedece.\n- Acende com a voz.\nRodapé: iCasas Automação · 17 99638-9193 · QR code (QR em área branca sólida, testar leitura com a luz ligada)\n\n## Prompt pra gerar o mockup\n```\nTotem vertical alto em frente a uma loja, à noite, render fotorrealista. Lona backlight retroiluminada com fundo azul-marinho quase preto. No centro, ilustração minimalista de uma casa moderna à noite, com as janelas acesas brilhando em verde, azul e laranja, como se a luz viesse de dentro. Acima, frase grande em sans-serif bold branca: \"Fala que ela faz.\" Logo iCasas Automação no rodapé. O totem emite brilho suave na calçada. Pessoa passando e olhando. Visual premium, tecnológico, limpo.\n```\n\n## Regras de arte pra backlight\n- Fundo escuro: lona com muito branco vira caixa de luz chapada e cansa a vista\n- Pedir prova de cor com luz ligada (cor escurece/muda retroiluminada)\n- Pedir densidade de tinta reforçada nas áreas escuras pra não vazar luz\n- Margem de segurança nas bordas do quadro/tensionamento\n- Arte final em vetor, escala real\n\n## Riscos\n- Licença da prefeitura pra totem na calçada\n- Iluminação interna mal distribuída deixa sombra de barra na lona — pedir LED/lâmpadas espaçadas e teste aceso\n- Timer pra ligar ao anoitecer e desligar de madrugada",
+    "checklist": [
+     {
+      "t": "Validar conceito e copy",
+      "done": false
+     },
+     {
+      "t": "Gerar mockup com o prompt",
+      "done": false
+     },
+     {
+      "t": "Checar regra da prefeitura",
+      "done": false
+     },
+     {
+      "t": "Medidas do totem e distância de leitura",
+      "done": false
+     },
+     {
+      "t": "Orçar 2-3 gráficas (lona backlight, opção dia/noite, iluminação, timer)",
+      "done": false
+     },
+     {
+      "t": "Arte final em vetor (fundo escuro)",
+      "done": false
+     },
+     {
+      "t": "Prova de cor com luz ligada",
+      "done": false
+     },
+     {
+      "t": "Aprovar com sócios",
+      "done": false
+     },
+     {
+      "t": "Produção e instalação",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
