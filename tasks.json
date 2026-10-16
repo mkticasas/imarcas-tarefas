@@ -3328,6 +3328,94 @@
     "id": "t-inst-120",
     "descricao": "Totem grande na frente da loja com **lona backlight (retroiluminada)**, arte estática, pra parar quem passa e apresentar a marca iCasas Automação.\n\n## Conceito escolhido: pergunta provocativa\nFundo escuro, um interruptor de parede comum iluminado como peça de museu (coisa do passado).\n- **Frase:** Ainda levantando pra apagar a luz?\n- **Assinatura:** iCasas Automação · 17 99638-9193\nTom: bem-humorado, nunca debochado.\n\n## Conjunto · totem DUPLA FACE (painel horizontal + totem vertical)\n| Face | Painel de cima | Totem vertical |\n|---|---|---|\n| Face 1 · Automação (loja à direita) | \"Ainda levantando pra apagar a luz?\" + interruptor | Totem vira PAINEL TOUCH gigante (Luz · Ar · Portão · Cinema) |\n| Face 2 · Construção | \"Ainda pagando aluguel?\" + chave | Totem vira PORTA com fresta de luz + \"A sua começa aqui.\" |\n\nConteúdo importante do totem vertical sempre da faixa diagonal pra cima (caixa de energia tapa a base).\n⚠️ PRECISO DE VOCÊ: medidas exatas; confirmar se o totem vertical também é backlight; trocar a lona inteira (restos de HubHouse/TL Imóveis aparecem com luz).\n\nPrompts completos (artes + mockups) no chat de 16/10.\n\n## Regras de arte pra backlight\n- Fundo escuro: lona com muito branco vira caixa de luz chapada\n- Prova de cor com luz ligada\n- Densidade de tinta reforçada nas áreas escuras\n- Margem de segurança nas bordas\n- Arte final em vetor, escala real\n\n## Riscos\n- Licença da prefeitura pra totem na calçada\n- Iluminação interna mal distribuída deixa sombra de barra — testar aceso\n- Timer pra ligar ao anoitecer"
    }
+  },
+  {
+   "id": "op-1023-upd-120",
+   "type": "update",
+   "task": {
+    "id": "t-inst-120",
+    "coluna": "doing",
+    "descricao": "Totem grande na frente da loja com **lona backlight (retroiluminada)**, arte estática, pra parar quem passa e apresentar a marca iCasas Automação.\n\n## Conceito escolhido: pergunta provocativa\nFundo escuro, um interruptor de parede comum iluminado como peça de museu (coisa do passado).\n- **Frase:** Ainda levantando pra apagar a luz?\n- **Assinatura:** iCasas Automação · 17 99638-9193\nTom: bem-humorado, nunca debochado.\n\n## Conjunto · totem DUPLA FACE (painel horizontal + totem vertical)\n| Face | Painel de cima | Totem vertical |\n|---|---|---|\n| Face 1 · Automação (loja à direita) | \"Ainda levantando pra apagar a luz?\" + interruptor | Totem vira PAINEL TOUCH gigante (Luz · Ar · Portão · Cinema) |\n| Face 2 · Construção | \"Ainda pagando aluguel?\" + chave | Totem vira PORTA com fresta de luz + \"A sua começa aqui.\" |\n\nConteúdo importante do totem vertical sempre da faixa diagonal pra cima (caixa de energia tapa a base).\n⚠️ PRECISO DE VOCÊ: medidas exatas; confirmar se o totem vertical também é backlight; trocar a lona inteira (restos de HubHouse/TL Imóveis aparecem com luz).\n\nPrompts completos (artes + mockups) no chat de 16/10.\n\n## Aprovado até agora (16/10) · anexos no card\n- ✅ Arte painel Face 1 · \"Ainda levantando pra **apagar a luz**?\" + interruptor (destaque em verde)\n- ✅ Arte painel Face 2 · \"Ainda pagando **aluguel**?\" + chave com etiqueta kraft (destaque em verde)\n- ✅ Mockup Face 1 no local (noite): painel + totem vertical com logo iCasas Grupo\n- Pendente: arte do totem vertical — Face 1 painel touch (Luz · Ar · Portão · Cinema), Face 2 porta \"A sua começa aqui.\"\n- Ajustes vistos no mockup: refletores das hastes aparecem acesos (confirmar se a caixa é backlight ou iluminada por fora); interruptor está colado na borda direita — dar respiro na arte final\n\n## Regras de arte pra backlight\n- Fundo escuro: lona com muito branco vira caixa de luz chapada\n- Prova de cor com luz ligada\n- Densidade de tinta reforçada nas áreas escuras\n- Margem de segurança nas bordas\n- Arte final em vetor, escala real\n\n## Riscos\n- Licença da prefeitura pra totem na calçada\n- Iluminação interna mal distribuída deixa sombra de barra — testar aceso\n- Timer pra ligar ao anoitecer",
+    "anexos": [
+     {
+      "name": "mockup-face1-automacao.jpg",
+      "url": "assets/cards/120/mockup-face1-automacao.jpg",
+      "cover": true
+     },
+     {
+      "name": "arte-painel-automacao.jpg",
+      "url": "assets/cards/120/arte-painel-automacao.jpg",
+      "cover": false
+     },
+     {
+      "name": "arte-painel-construcao.jpg",
+      "url": "assets/cards/120/arte-painel-construcao.jpg",
+      "cover": false
+     }
+    ],
+    "checklist": [
+     {
+      "t": "Validar conceito e copy",
+      "done": true
+     },
+     {
+      "t": "Arte painel Face 1 (automação)",
+      "done": true
+     },
+     {
+      "t": "Arte painel Face 2 (construção)",
+      "done": true
+     },
+     {
+      "t": "Mockup Face 1 no local",
+      "done": true
+     },
+     {
+      "t": "Arte totem vertical Face 1 (painel touch)",
+      "done": false
+     },
+     {
+      "t": "Arte totem vertical Face 2 (porta)",
+      "done": false
+     },
+     {
+      "t": "Mockup Face 2 no local",
+      "done": false
+     },
+     {
+      "t": "Checar regra da prefeitura",
+      "done": false
+     },
+     {
+      "t": "Medidas exatas das 4 peças",
+      "done": false
+     },
+     {
+      "t": "Confirmar backlight x iluminação externa",
+      "done": false
+     },
+     {
+      "t": "Orçar 2-3 gráficas (lona inteira nova)",
+      "done": false
+     },
+     {
+      "t": "Arte final em vetor",
+      "done": false
+     },
+     {
+      "t": "Prova de cor com luz ligada",
+      "done": false
+     },
+     {
+      "t": "Aprovar com sócios",
+      "done": false
+     },
+     {
+      "t": "Produção e instalação",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
