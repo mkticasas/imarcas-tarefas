@@ -3286,6 +3286,14 @@
      }
     ]
    }
+  },
+  {
+   "id": "op-1018-upd-120",
+   "type": "update",
+   "task": {
+    "id": "t-inst-120",
+    "descricao": "Totem grande na frente da loja com **lona backlight (retroiluminada)**, arte estática, pra parar quem passa e apresentar a marca iCasas Automação.\n\n## Conceito escolhido: pergunta provocativa\nFundo escuro, um interruptor de parede comum iluminado como peça de museu (coisa do passado).\n- **Frase:** Ainda levantando pra apagar a luz?\n- **Assinatura:** iCasas Automação · 17 99638-9193\nTom: bem-humorado, nunca debochado.\n\n## Prompt da arte (vertical, chapada)\n```\nArte vertical para lona backlight de totem, proporção 1:3, design gráfico minimalista e premium. Fundo azul-marinho quase preto, liso. No terço central, um interruptor de luz de parede branco, comum e simples, iluminado de cima por um único feixe de luz suave, como uma peça exposta em museu, com sombra delicada. No terço superior, a frase em tipografia sans-serif bold branca, grande, em três linhas alinhadas à esquerda: \"Ainda levantando / pra apagar / a luz?\". No rodapé, três barras finas lado a lado nas cores verde, azul e laranja, seguidas do texto \"iCasas Automação\" em branco e um telefone menor abaixo. Muito espaço negativo, sem outros elementos, sem texturas, sem pessoas. Estética de campanha publicitária moderna e bem-humorada.\n```\nObservação: IA erra texto — gerar a imagem como referência e montar o texto/logo de verdade no vetor.\n\n## Mockup no local\nAguardando foto do local (Lucas vai mandar) pra montar o prompt do totem aplicado na fachada.\n\n## Regras de arte pra backlight\n- Fundo escuro: lona com muito branco vira caixa de luz chapada\n- Prova de cor com luz ligada\n- Densidade de tinta reforçada nas áreas escuras\n- Margem de segurança nas bordas\n- Arte final em vetor, escala real\n\n## Riscos\n- Licença da prefeitura pra totem na calçada\n- Iluminação interna mal distribuída deixa sombra de barra — testar aceso\n- Timer pra ligar ao anoitecer"
+   }
   }
  ]
 }
