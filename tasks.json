@@ -3488,19 +3488,19 @@
           },
           {
             "t": "Checar regra de publicidade externa da prefeitura",
-            "done": false
+            "done": true
           },
           {
             "t": "Definir tamanho, pitch e brilho do painel",
-            "done": false
+            "done": true
           },
           {
             "t": "Orçamento estimado (painel + estrutura + instalação)",
-            "done": false
+            "done": true
           },
           {
             "t": "Calcular impactos/mês e custo por mil impactos vs mídia equivalente",
-            "done": false
+            "done": true
           },
           {
             "t": "Montar documento final e enviar até 10:00 de 29/10",
@@ -3508,6 +3508,48 @@
           }
         ],
         "coluna": "doing"
+      }
+    },
+    {
+      "id": "op-1028-upd2-121",
+      "type": "update",
+      "task": {
+        "id": "t-inst-121",
+        "descricao": "📄 **Estudo (rascunho):** https://claude.ai/artifact/6S79n3SjRMxEV5iyVEdrCm\n\n## Dados do cliente\n- **Endereço:** Av. Pres. Juscelino Kubitschek de Oliveira, 4100 – Res. Eco Village I, São José do Rio Preto – SP, 15093-270\n- **Objetivo do painel:** mostrar a marca Hyundai (uso próprio, não venda de espaço)\n- **Tamanho/orçamento:** cliente não tem nada definido — o estudo recomenda\n\n## Objetivo\nEstudo de viabilidade de painel de LED externo no ponto da Hyundai próximo ao Iguatemi: quantas pessoas/veículos passam, se o painel é visto e se o investimento se paga.\n**Entrega: amanhã (29/10) às 10:00.**\n\n## Estrutura do estudo\n1. **Fluxo** — veículos e pedestres por hora (contagem no local em 2 horários de pico + dado público de tráfego/Google Maps quando houver)\n2. **Visibilidade** — sentido da via, velocidade média, distância e tempo de leitura, ângulo, obstáculos (árvores, postes, placas)\n3. **Público** — perfil de quem passa (shopping, renda, horários)\n4. **Técnico** — tamanho sugerido, pitch (P6–P10 pra externo), brilho mínimo pra sol direto, estrutura e energia\n5. **Legal** — regra de publicidade externa da prefeitura de Rio Preto (licença/limites de tamanho e brilho)\n6. **Financeiro** — custo estimado (painel + estrutura + instalação), impactos/mês, custo por mil impactos comparado a outdoor/mídia paga equivalente\n\n## Riscos\n- Prazo curto: contagem de fluxo real só dá pra fazer hoje à tarde/noite — o resto vira estimativa, deixar isso claro no documento\n- Sem licença da prefeitura o projeto para — é o primeiro ponto a checar",
+        "checklist": [
+          {
+            "t": "Confirmar endereço e objetivo do painel com o cliente",
+            "done": true
+          },
+          {
+            "t": "Contagem de fluxo no local (2 horários de pico)",
+            "done": false
+          },
+          {
+            "t": "Fotos/vídeo do ponto e ângulos de visão",
+            "done": false
+          },
+          {
+            "t": "Checar regra de publicidade externa da prefeitura",
+            "done": true
+          },
+          {
+            "t": "Definir tamanho, pitch e brilho do painel",
+            "done": true
+          },
+          {
+            "t": "Orçamento estimado (painel + estrutura + instalação)",
+            "done": true
+          },
+          {
+            "t": "Calcular impactos/mês e custo por mil impactos vs mídia equivalente",
+            "done": true
+          },
+          {
+            "t": "Montar documento final e enviar até 10:00 de 29/10",
+            "done": false
+          }
+        ]
       }
     }
   ]
