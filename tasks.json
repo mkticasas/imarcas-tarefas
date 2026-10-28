@@ -3596,6 +3596,15 @@
      }
     ]
    }
+  },
+  {
+   "id": "op-1028-upd-122",
+   "type": "update",
+   "task": {
+    "id": "t-inst-122",
+    "titulo": "CASINHA DO DIGNIDADE · ALUGUEL COM PACOTES",
+    "descricao": "⚠️ PRECISO DE VOCÊ\n- Nome do dono da casa e % que fica pra iMarcas/você por aluguel (ele falou em \"uma parte tua\" em cada locação)\n- Endereço, capacidade máxima liberada e regras (som, horário, vizinhança)\n- Preço base da diária que ele quer cobrar\n\n## Contexto\nCasa de festa/lazer pronta há ~3 anos (investimento de ~R$70 mil), parada. Meta do dono: render pelo menos ~R$4 mil/mês. Estrutura: 2 quartos, 2 banheiros, área gourmet com churrasqueira e piscina. O público vem pra curtir e vai embora (não é pra dormir).\nIdeia de nome: **Casinha do Dignidade** (ele já pensava em grafite/luz na fachada pra virar ponto \"instagramável\").\n\n## Modelo proposto\n- Anúncio no Airbnb + Marketplace; nós montamos número de WhatsApp, atendimento e fechamento\n- Mãe do dono cuida das visitas e de deixar a casa pronta\n- Fechou → contrato com assinatura digital + Pix (ou cartão em até 18x com juros repassados)\n- **Pacotes** (fechar 2 ou 3):\n  1. Só a casa\n  2. Casa + churrasqueira acesa + bebidas\n  3. Completo: + carne (ex.: 3 peças de picanha) + churrasqueiro\n- Bebidas via permuta com o Pereira: cliente paga antes; o que não consumir é devolvido (regra em contrato, tipo \"caução\")\n- Site/página onde o cliente monta o pacote e já vê o preço final (com juros se escolher cartão). Preços de insumos precisam de atualização semanal\n- Indicar de onde vem a carne (açougue parceiro) pra não gerar dúvida\n\n## Próximos passos\n- [ ] Definir % da iMarcas e fechar acordo por escrito com o dono\n- [ ] Sessão de fotos + vídeo da casa (ideal: evento/festa iCasas lá pra mostrar capacidade lotada)\n- [ ] Fechar composição e preço dos pacotes\n- [ ] Criar anúncios Airbnb + Marketplace\n- [ ] Número de WhatsApp + roteiro de atendimento\n- [ ] Modelo de contrato (regras de uso, caução, devolução de consumo)\n- [ ] Página/site \"Casinha do Dignidade\" com montagem de pacote\n\n## Riscos / pontos de atenção\n- Devolução de saldo de bebida exige controle de estoque antes e depois de cada festa (contagem com foto) — sem isso vira briga\n- Churrasqueiro e carne: quem fornece e quem responde se der problema? Precisa estar no contrato\n- Mãe do dono como operação de campo é gargalo (ele mesmo disse que ela não acompanha o ritmo) — definir alternativa se a demanda subir\n- Airbnb tem regras restritas pra festas; validar se o anúncio cabe na política deles ou se o canal principal vai ser Marketplace/Instagram\n- Checar alvará/regras de vizinhança pra som e eventos"
+   }
   }
  ]
 }
