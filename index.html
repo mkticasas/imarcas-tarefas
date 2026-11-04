@@ -1003,6 +1003,10 @@
         </div>
       </div>
       <div class="form-group">
+        <label>E-mail do login</label>
+        <div id="profile-email" style="font-size:14px;font-weight:600;padding:9px 12px;border:1px dashed var(--border2);border-radius:8px;background:var(--bg);color:var(--text);word-break:break-all;user-select:all;">--</div>
+      </div>
+      <div class="form-group">
         <label>Nome</label>
         <input type="text" id="profile-name" oninput="perfPreviewAtualiza()">
       </div>
@@ -1317,6 +1321,7 @@ async function finishLoginAfterAuth(){
 function onLoginSuccess(){
   document.getElementById('loginScreen').classList.remove('show');
   document.getElementById('currentUserAvatar').textContent = initials(currentUser.name);
+  document.getElementById('currentUserAvatar').title = 'Meu perfil · '+(currentUser.email||'');
   loadAll();
   setTimeout(function(){try{perfAplicarAvatar();}catch(e){}},1200);
   showPage('tasks');
@@ -3743,6 +3748,7 @@ async function openProfileModal(){
   if(perfFotoPath){await tkAssinar([perfFotoPath]);perfFotoUrl=tkUrlCache[perfFotoPath]||'';}
   perfRenderCores();
   document.getElementById('profile-name').value = currentUser.name;
+  document.getElementById('profile-email').textContent = (m&&m.email)||currentUser.email||'--';
   document.getElementById('profile-password').value = '';
   document.getElementById('profile-password-confirm').value = '';
   perfPreviewAtualiza();
