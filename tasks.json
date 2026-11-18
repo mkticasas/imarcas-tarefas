@@ -3905,6 +3905,114 @@
      }
     ]
    }
+  },
+  {
+   "id": "op-1118-upd-123",
+   "type": "update",
+   "task": {
+    "id": "t-inst-123",
+    "descricao": "⚠️ PRECISO DE VOCÊ\n- A arena já está funcionando ou abre quando? (bio diz \"em breve\")\n- Nome do responsável\n- Confirmar preços avulso/mensal e horários livres\n\n## Perfil atual (@br153arena, 18/11)\n- **Modalidades:** Beach Tennis · Futevôlei · Vôlei de Areia\n- **WhatsApp na bio:** (17) 99679-6412 (link sem mensagem pronta)\n- **19,3 mil seguidores, só 7 posts** e 632 seguindo\n- Nome do perfil \"BR153 arena\" (não aparece em busca por modalidade)\n- Bio diz **\"Em breve em Rio...\"** → ainda em pré-abertura?\n- 1 destaque genérico (\"Destaques\") com o flyer: avulso ~R$ 80/h, mensal ~R$ 70/h, a partir de uma quarta-feira, 16h às 00h (imagem pequena, confirmar)\n- Sem endereço/localização no perfil\n\n## Leitura\n- Base de 19 mil é o maior ativo: público pronto pra remarketing e pra campanha de vagas. **Checar se é seguidor local e real** (alcance/engajamento dos 7 posts); se for base comprada ou de fora, não serve de público.\n- Perfil quase vazio pra esse tamanho de base: falta prova de que a arena existe e funciona (quadras, jogo rolando, horários).\n- Se ainda não abriu, a campanha de vagas vira **pré-venda de mensalistas/inauguração**.\n\n\n## Plano fechado\n**Ouro** (valor fica só no Supabase, repo é público):\n- 5 fotos profissionais\n- 1 vídeo de apresentação\n- 4 criativos em imagem\n- 3 conteúdos em reels\n- Organização do tráfego pago\n- Perfil montado: bio, destaques e fixados\n\n**Pedido extra do cliente:** divulgar que tem **vagas disponíveis para jogar** → card próprio.\n\n## Regras iMarcas\n- Paga antes, produção começa depois · sem fidelidade\n- Verba de anúncio é paga pelo cliente direto à plataforma",
+    "checklist": [
+     {
+      "t": "ONBOARDING · Receber pagamento antes de produzir",
+      "done": false
+     },
+     {
+      "t": "ONBOARDING · Criar grupo iMarcas · BR 153 Arena no WhatsApp",
+      "done": false
+     },
+     {
+      "t": "ONBOARDING · Pegar @, logo e acessos (Meta Business, página, conta de anúncios)",
+      "done": false
+     },
+     {
+      "t": "ONBOARDING · Briefing: modalidade, público, horários, preços, diferenciais da arena",
+      "done": false
+     },
+     {
+      "t": "ONBOARDING · Definir verba mensal de tráfego (separada do plano)",
+      "done": false
+     },
+     {
+      "t": "ENTREGA · Fotos + vídeo",
+      "done": false
+     },
+     {
+      "t": "ENTREGA · Perfil montado",
+      "done": false
+     },
+     {
+      "t": "ENTREGA · 4 criativos",
+      "done": false
+     },
+     {
+      "t": "ENTREGA · 3 reels",
+      "done": false
+     },
+     {
+      "t": "ENTREGA · Tráfego rodando",
+      "done": false
+     },
+     {
+      "t": "ENTREGA · Campanha de vagas",
+      "done": false
+     },
+     {
+      "t": "ONBOARDING · Pedir print das estatísticas (cidades/idade dos seguidores, alcance)",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "op-1118-upd-125",
+   "type": "update",
+   "task": {
+    "id": "t-inst-125",
+    "descricao": "## Nome do perfil (campo pesquisável)\n**BR 153 Arena · Beach Tennis e Futevôlei**\n\n## Bio (proposta)\n🏐 Beach Tennis · Futevôlei · Vôlei de Areia\n🌅 Quadras de areia iluminadas · 16h às 00h\n📍 [bairro/endereço curto] · Rio Preto\n👇 Reserve seu horário ou vire mensalista\n\n**Link:** wa.me/5517996796412 com mensagem pronta: \"Oi! Vim pelo Instagram e quero reservar um horário na BR 153 Arena.\"\n(Se ainda não abriu: trocar a 2ª linha por \"🚧 Inauguração dia XX · garanta seu horário\")\n\n## Destaques (substituir o \"Destaques\" único)\n- **Horários** (grade semanal com vagas)\n- **Valores** (avulso x mensalista)\n- **Aulas**\n- **Estrutura**\n- **Eventos/Torneios**\n- **Como chegar**\n\n## Fixados\n1. Vídeo de apresentação\n2. Post \"Vagas abertas\" (grade de horários)\n3. Valores avulso x mensal (ou contagem pra inauguração)",
+    "checklist": [
+     {
+      "t": "Escrever bio final",
+      "done": false
+     },
+     {
+      "t": "Link do WhatsApp com mensagem pronta",
+      "done": false
+     },
+     {
+      "t": "Capas dos destaques na identidade da arena",
+      "done": false
+     },
+     {
+      "t": "Montar destaques",
+      "done": false
+     },
+     {
+      "t": "Publicar e fixar os 3 posts",
+      "done": false
+     },
+     {
+      "t": "Adicionar localização/endereço no perfil (botão de contato)",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "op-1118-upd-128",
+   "type": "update",
+   "task": {
+    "id": "t-inst-128",
+    "descricao": "⚠️ PRECISO DE VOCÊ: verba mensal\n\n## Estrutura\n- **Objetivo:** cadastros (formulário instantâneo) + mensagens no WhatsApp\n- **Raio:** 10–15 km da arena\n\n## Públicos\n- **Frio interesse:** 18–45, interesses em beach tennis, futevôlei, vôlei de praia/areia, tênis, padel, esportes de areia, academia/crossfit, vida saudável\n- **Morno (prioridade, base de 19 mil):** seguidores + quem engajou com o Instagram/assistiu 50% dos vídeos nos últimos 30 dias\n- **Quente:** quem conversou no WhatsApp ou abriu o formulário e não enviou (remarketing)\n- **Semelhante:** 1% da lista de alunos/clientes (quando tiver base)\n\n## Formulário instantâneo\n- Nome · WhatsApp (obrigatórios)\n- Qual modalidade? beach tennis · futevôlei · vôlei de areia\n- Já joga? nunca joguei · iniciante · intermediário · avançado\n- O que procura? aula/turma · horário avulso com amigos · mensalista\n- Melhor período: manhã · tarde · noite\n- Tela final: \"Recebemos! Vamos te chamar no WhatsApp com os horários livres.\" + botão WhatsApp\n\n## Regras de otimização (se/então)\n- **Se** custo por cadastro > 2x a meta por 3 dias → pausar anúncio\n- **Se** CTR < 1% após 1.000 impressões → trocar criativo\n- **Se** frequência > 3 no público frio → renovar criativo\n- **Se** um anúncio tem custo por cadastro 30% abaixo da média por 3 dias → +20% verba no conjunto\n- **Se** os cadastros chegam mas não respondem no WhatsApp → revisar pergunta de qualificação / tempo de resposta (meta: responder em até 15 min)"
+   }
+  },
+  {
+   "id": "op-1118-upd-129",
+   "type": "update",
+   "task": {
+    "id": "t-inst-129",
+    "descricao": "Pedido do cliente: divulgar que tem **vagas para jogar**.\n\n⚠️ PRECISO DE VOCÊ: horários livres e confirmar valores (flyer atual: avulso ~R$ 80/h, mensal ~R$ 70/h)\n\n**Ângulo principal:** mensalista paga menos por hora → empurrar mensal (receita recorrente pra arena). Se ainda não abriu: pré-venda de mensalistas antes da inauguração.\n\n## Ações\n1. **Post fixo \"Vagas abertas\"** com a grade da semana (modelo editável que eu atualizo)\n2. **Stories semanais** toda segunda: \"Horários livres desta semana\" + caixinha/link WhatsApp\n3. **Reels \"Ainda tem vaga\"** (reels 3 do plano)\n4. **Anúncio** com o criativo de vagas → formulário instantâneo ou WhatsApp\n5. **Mensagem pronta** pro WhatsApp: \"Oi! Vi que tem vaga na BR 153 Arena. Quero saber os horários.\"\n6. **Gatilho de urgência** quando lotar: \"Restam 2 vagas na turma de terça 19h\"\n\n## Medir\n- Nº de contatos por semana vindos da campanha\n- Vagas preenchidas (pedir pro cliente informar)"
+   }
   }
  ]
 }
