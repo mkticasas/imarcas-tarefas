@@ -4022,6 +4022,68 @@
     "descricao": "## Entrega\n- **5 fotos profissionais**\n- **1 vídeo de apresentação** (30–60s)\n\n## Agendar\n- Horário com **quadra cheia/jogo rolando** (fim de tarde ou noite com iluminação ligada)\n- Aproveitar o mesmo dia pra gravar material bruto dos 3 reels\n\n## Lista de fotos (5)\n1. Fachada/entrada com nome da arena\n2. Quadra inteira (plano aberto, de cima se der)\n3. Jogo em ação (lance forte)\n4. Galera reunida/resenha pós-jogo\n5. Estrutura de apoio (bar, vestiário, área de descanso) ou professor dando aula\n\n## Vídeo de apresentação (roteiro base)\n- 0–3s: lance de jogo + texto \"Já jogou na BR 153 Arena?\"\n- Estrutura: quadras, iluminação, apoio\n- Quem joga: aulas/turmas/horários livres\n- Fecho: localização + \"Chama no WhatsApp e garante seu horário\"\n\n\n---\n## PERGUNTAS PRA FAZER NA ARENA (19/11)\n**Briefing (fora da câmera)**\n1. Já está funcionando? Se não, qual a data de inauguração?\n2. Valores: avulso e mensal ainda são ~R$ 80/h e ~R$ 70/h? Tem pacote, day use, aluguel de equipamento?\n3. Quais horários estão mais vazios hoje? (é o que a campanha de vagas vai vender)\n4. Tem aulas? Quem é o professor, níveis, turmas e valor?\n5. Quantas quadras, que modalidade mais sai, tem bar/vestiário/estacionamento?\n6. Quem é o público hoje: idade, bairro, iniciante ou quem já joga?\n7. Como chega a reserva hoje (WhatsApp, app, indicação)? Quem responde?\n8. Já fizeram torneio/evento? Planejam?\n9. Os 19 mil seguidores vieram de onde? Pedir print das estatísticas (cidades, idade, alcance)\n10. Verba mensal pro anúncio e meta: quantos mensalistas querem fechar?\n\n**Entrevista em vídeo (dono)**\n1. Por que você abriu a BR 153 Arena?\n2. Pra quem é a arena? Precisa saber jogar?\n3. O que tem aqui que não tem nas outras arenas de Rio Preto?\n4. Como é um fim de tarde aqui?\n5. Fala pra quem nunca jogou: como começar?\n6. Fecho: \"Chama no WhatsApp e garante seu horário\"\n\n**Depoimentos (2 ou 3 jogadores, 10s cada)**\n- Há quanto tempo joga aqui? O que mais curte? Recomenda pra quem?",
     "prazo": "2026-11-19"
    }
+  },
+  {
+   "id": "op-1119-add-130",
+   "type": "add",
+   "task": {
+    "id": "t-inst-130",
+    "codigo": 130,
+    "titulo": "PRINCESO · PEDIR DADOS DO INSTA PRO MEDIA KIT",
+    "coluna": "todo",
+    "area": "iMarcas",
+    "prioridade": "media",
+    "ordem": 130,
+    "dia": "2026-11-23",
+    "prazo": "2026-11-23",
+    "descricao": "Segunda: pedir pro Princeso (@princeso_ftv) os dados de desempenho do Instagram pra montar o media kit dele.\n\n## O que pedir (prints do Insights, últimos 30 e 90 dias)\n- Seguidores e crescimento no período\n- Contas alcançadas e contas com engajamento\n- Público: cidades, faixa etária e gênero\n- Média de visualizações dos Reels e dos Stories\n- Top 3 posts/Reels (alcance e interações)\n- Parcerias/publis anteriores com resultado, se tiver\n\n## Depois\n- Montar o media kit com a identidade iMarcas no rodapé",
+    "checklist": [
+     {
+      "t": "Pedir os prints do Insights",
+      "done": false
+     },
+     {
+      "t": "Receber e conferir os dados",
+      "done": false
+     },
+     {
+      "t": "Montar o media kit",
+      "done": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "op-1119-add-131",
+   "type": "add",
+   "task": {
+    "id": "t-inst-131",
+    "codigo": 131,
+    "titulo": "PRINCESO · VÍDEO DE INAUGURAÇÃO NA ICASAS",
+    "coluna": "todo",
+    "area": "iMarcas",
+    "prioridade": "media",
+    "ordem": 131,
+    "descricao": "Vídeo anunciando a chegada do Princeso (@princeso_ftv) na iCasas, abrindo a parceria de conteúdo.\n\n## Lembretes\n- Tom mais sério, sem ser espalhafatoso\n- Captação pela equipe iCasas\n- Collab/marcação com @icasas\n\n## Pendências\n- Roteiro\n- Data de gravação com ele",
+    "checklist": [
+     {
+      "t": "Roteiro",
+      "done": false
+     },
+     {
+      "t": "Agendar gravação",
+      "done": false
+     },
+     {
+      "t": "Gravar",
+      "done": false
+     },
+     {
+      "t": "Editar e publicar",
+      "done": false
+     }
+    ]
+   }
   }
  ]
 }
